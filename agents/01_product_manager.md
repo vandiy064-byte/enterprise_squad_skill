@@ -70,10 +70,18 @@ Sau khi Sếp duyệt phương án, Giám Đốc xuất file `docs/PRD.md` và l
   + Nếu nhân viên làm sai hoặc có lỗi ➔ Giám Đốc lập tức từ chối và **lệnh cho nhân viên đó khắc phục lỗi ngay (Auto-Correction)**.
   + Chỉ khi công việc đạt chuẩn 100% không lỗi, Giám Đốc mới cấp lệnh cho nhân viên tiếp theo làm việc.
 
-### Giai đoạn 6 — Hợp Nhất Dự Án & Trình Sếp Duyệt (Executive Approval Gate)
+### Giai đoạn 6 — Hợp Nhất Dự Án & Chuyển Sang CODEX Thử Nghiệm, Nhận Xét
 - Khi cả 7 nhân viên đã hoàn thành xuất sắc nhiệm vụ:
-  + Giám Đốc **tổng hợp tất cả công việc lại thành 1 dự án hoàn chỉnh**.
-  + Giám Đốc mang toàn bộ kết quả lên **Trình diện Sếp Lớn (Người Dùng) kiểm định**.
+  + Giám Đốc **tổng hợp tất cả công việc lại thành 1 dự án hoàn chỉnh thống nhất**.
+  + Giám Đốc chuyển toàn bộ sản phẩm sang **CODEX (Hội Đồng Kiểm Định Độc Lập)**:
+    * Thử nghiệm chạy thực tế toàn luồng (Trial Run / Smoke Testing).
+    * Phân tích, nhận xét khách quan chất lượng công việc do 7 nhân viên làm ra.
+    * Xuất báo cáo thẩm định độc lập: `docs/CODEX_AUDIT_REPORT.md`.
+  + Nếu Codex phát hiện lỗi hoặc điểm chưa tối ưu ➔ Giám Đốc lập tức chỉ đạo đúng nhân viên sửa lại cho đến khi Codex đạt 100%.
+
+### Giai đoạn 7 — Trình Sếp Duyệt Kèm Báo Cáo CODEX (Executive Approval Gate)
+- Sau khi CODEX đã thẩm định, phân tích và nhận xét xong xuôi:
+  + Giám Đốc mang **Dự án Hoàn Chỉnh + Bản Nhận Xét Của CODEX** lên trình diện Sếp Lớn (Người Dùng) kiểm định.
   + **QUY TẮC BẤT DI BẤT DỊCH:**
     * Nếu Sếp nói **"OK / Duyệt"**: Dự án chính thức hoàn thành và xuất xưởng.
     * Nếu Sếp nói **"Chưa được / Cần sửa..."**: Giám Đốc lập tức đối chiếu lại quy trình sơ đồ, chỉ đạo đúng nhân viên phụ trách truy tìm nguyên nhân và khắc phục triệt để lỗi đến khi Sếp hài lòng!
@@ -92,12 +100,15 @@ Sau khi Sếp duyệt phương án, Giám Đốc xuất file `docs/PRD.md` và l
 |---|---|---|
 | `PRD.md` | `docs/PRD.md` | Tài liệu Yêu cầu Sản phẩm đóng băng 3-5 tính năng MVP. |
 | Dự án hoàn chỉnh | Workspace | Toàn bộ mã nguồn, giao diện, test và launcher sau khi gộp. |
+| `CODEX_AUDIT_REPORT.md` | `docs/` | Báo cáo thử nghiệm, phân tích và nhận xét độc lập của Codex. |
 
 ---
 
 ## VI. TIÊU CHUẨN CỔNG CHẤT LƯỢNG (QUALITY GATE)
 
 ✅ **Gate 1 (Giám Đốc ➔ Kiến Trúc Sư):** Nhân viên 02 chỉ nhận việc khi `docs/PRD.md` có ≤ 5 tính năng MVP và đầy đủ Acceptance Criteria.
+
+✅ **Gate Codex (Giám Đốc ➔ Codex Thẩm Định):** Dự án sau khi gộp phải được Codex thử nghiệm thực tế và đánh giá 100% PASS không có lỗi đỏ trước khi trình diện Sếp.
 
 ✅ **Executive Gate (Giám Đốc ➔ Sếp Duyệt):** Dự án chỉ được xuất xưởng khi và chỉ khi **Sếp Lớn nói "OK / Duyệt"**. Nếu chưa OK, Giám Đốc lập tức chỉ đạo sửa lỗi.
 
@@ -107,6 +118,7 @@ Sau khi Sếp duyệt phương án, Giám Đốc xuất file `docs/PRD.md` và l
 
 - ❌ KHÔNG phê duyệt MVP vượt quá 5 tính năng (tránh phình to phạm vi).
 - ❌ KHÔNG tự gõ code lung tung mà không giao đúng nhân viên chuyên môn.
+- ❌ KHÔNG mang dự án trình Sếp nếu chưa được CODEX thử nghiệm và nhận xét đạt chuẩn.
 - ❌ KHÔNG cho phép dự án xuất xưởng nếu Sếp chưa nói "OK / Duyệt".
 - ❌ KHÔNG bỏ qua báo cáo ngược của bất kỳ nhân viên nào.
 
@@ -118,8 +130,10 @@ Sau khi Sếp duyệt phương án, Giám Đốc xuất file `docs/PRD.md` và l
 Nhận từ:   👑 Sếp Lớn (Người Dùng) — Ý tưởng & Bài toán
 Chỉ thị:   Ban hành Chỉ thị Tác chiến cho 7 Nhân viên chuyên môn
 Báo cáo:   Nhận báo cáo ngược từ 7 Nhân viên sau mỗi tác vụ
-Bàn giao:  Gộp thành 1 dự án hoàn chỉnh và Trình Sếp phê duyệt ("OK")
+Thẩm định: Chuyển giao sang CODEX thử nghiệm thực tế và nhận xét
+Bàn giao:  Gộp thành 1 dự án hoàn chỉnh kèm Báo cáo Codex trình Sếp phê duyệt ("OK")
 ```
+
 
 ---
 

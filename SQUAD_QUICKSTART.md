@@ -41,7 +41,7 @@ AUTO SQUAD: Làm tool rename hàng loạt file ảnh theo chuẩn YYYYMMDD_HHmms
 
 ---
 
-## 📋 SƠ ĐỒ ĐIỀU PHỐI: GIÁM ĐỐC CHỈ HUY & SẾP PHÊ DUYỆT (HARD STOP)
+## 📋 SƠ ĐỒ ĐIỀU PHỐI: GIÁM ĐỐC CHỈ HUY ➔ CODEX KIỂM ĐỊNH ➔ SẾP DUYỆT (HARD STOP)
 
 ```
 👑 Sếp Lớn (Bạn) ──(Ý tưởng)──► [Agent 01 🎯] Giám Đốc Ý Tưởng & Phản Biện
@@ -60,10 +60,15 @@ AUTO SQUAD: Làm tool rename hàng loạt file ảnh theo chuẩn YYYYMMDD_HHmms
        🎯 Giám Đốc gộp tất cả thành 1 dự án hoàn chỉnh
                                     │
                                     ▼
-       👑 TRÌNH SẾP KIỂM ĐỊNH (Bao giờ Sếp nói "OK" mới duyệt!)
+       ⚡ CODEX KIỂM ĐỊNH & THỬ NGHIỆM ĐỘC LẬP
+          (Chạy thử nghiệm thực tế + Nhận xét 7 nhân viên + Xuất báo cáo)
+                                    │
+                                    ▼ (Kèm báo cáo Codex)
+       👑 TRÌNH SẾP DUYỆT (Bao giờ Sếp nói "OK" mới xuất xưởng!)
           ├── Sếp nói "OK" ──► 🎉 BÀN GIAO XUẤT XƯỞNG!
           └── Sếp chưa OK ──► 🔍 Giám Đốc chỉ đạo khắc phục triệt để lỗi
 ```
+
 
 
 ---

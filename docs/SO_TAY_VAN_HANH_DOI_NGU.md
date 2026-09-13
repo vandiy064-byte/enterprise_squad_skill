@@ -76,6 +76,14 @@ Giám Đốc gộp toàn bộ dự án và chỉ khi **Sếp Lớn (Người Dù
   └─────────────────────────────────────────────────────────────┘
                                 │
                                 ▼
+  ┌─────────────────────────────────────────────────────────────┐
+  │  ⚡ CODEX KIỂM ĐỊNH & THỬ NGHIỆM ĐỘC LẬP (TRIAL & AUDIT)    │
+  │  • Chạy thử nghiệm toàn luồng thực tế (Trial Run)           │
+  │  • Phân tích, nhận xét khách quan sản phẩm 7 nhân viên làm  │
+  │  • Xuất bản báo cáo độc lập: docs/CODEX_AUDIT_REPORT.md     │
+  └─────────────────────────────────────────────────────────────┘
+                                │
+                                ▼ (Kèm báo cáo Codex)
   👑 TRÌNH SẾP KIỂM ĐỊNH (EXECUTIVE APPROVAL GATE - HARD STOP)
        │
        ├───► Sếp nói "OK / DUYỆT" ───────► 🎉 XUẤT XƯỞNG BÀN GIAO!
@@ -89,16 +97,28 @@ Giám Đốc gộp toàn bộ dự án và chỉ khi **Sếp Lớn (Người Dù
 
 ---
 
-## 2.1 CƠ CHẾ BÁO CÁO NGƯỢC & SẾP PHÊ DUYỆT TỐI CAO
+## 2.1 CƠ CHẾ BÁO CÁO NGƯỢC & GIÁM ĐỐC KIỂM SOÁT TIẾN ĐỘ
 
 1. **Cơ Chế Báo Cáo Ngược (Upward Reporting):**
    - Tuyệt đối không để nhân viên tự ý bàn giao chéo hoặc tự ý kết thúc mà không qua Giám Đốc.
    - Mỗi khi 1 nhân viên làm xong 1 việc: Phải lập tức gửi báo cáo ngắn gọn (Checklist hoặc Bảng Markdown dưới 15 dòng) về cho Giám Đốc.
    - Giám Đốc kiểm tra chất lượng tại cổng Quality Gate. Nếu có lỗi ➔ Giám Đốc lệnh sửa ngay tại chỗ (Auto-Fix Loop tối đa 3 lần).
-2. **Cổng Phê Duyệt Của Sếp (Executive Approval Gate):**
-   - Giám Đốc là người chịu trách nhiệm tổng hợp mã nguồn, giao diện, test và tài liệu thành 1 dự án thống nhất.
-   - Giám Đốc mang toàn bộ kết quả lên báo cáo Sếp.
-   - **Bao giờ Sếp nói "OK / Duyệt" thì mới được đóng task!**
+2. **Gộp Dự Án:** Sau khi cả 7 nhân viên hoàn thành 100%, Giám Đốc tích hợp toàn bộ thành 1 sản phẩm hoàn chỉnh thống nhất.
+
+---
+
+## 2.2 CƠ CHẾ KIỂM ĐỊNH ĐỘC LẬP QUA CODEX (CODEX AUDIT GATE)
+
+Trước khi sản phẩm được đưa lên bàn Sếp, dự án bắt buộc phải vượt qua kỳ sát hạch độc lập của **CODEX**:
+1. **Chạy Thử Nghiệm Thực Tế (Trial Run):** Codex trực tiếp kích hoạt khởi chạy hệ thống, gọi API, thao tác UI thực tế để đảm bảo không bị đơ, không bị crash âm thầm.
+2. **Phân Tích & Nhận Xét Khách Quan:** Codex đánh giá 4 khía cạnh:
+   - *Tính tối ưu:* Tài nguyên CPU/RAM, số dòng code (< 250 dòng), hiệu quả token.
+   - *Tính chính xác:* Đúng theo sơ đồ Clean Architecture và PRD của Giám Đốc.
+   - *Tính an toàn:* Bẫy lỗi ngoại lệ `try...except`, an toàn file `.bak`, không lộ API keys.
+   - *Độ ăn khớp:* 7 nhân viên ráp nối module có mượt mà, trơn tru không.
+3. **Xuất Báo Cáo Thẩm Định:** Codex ban hành tệp [`docs/CODEX_AUDIT_REPORT.md`](CODEX_AUDIT_REPORT.md).
+4. **Cổng Phê Duyệt Của Sếp:** Giám Đốc trình toàn bộ dự án kèm báo cáo Codex lên Sếp. **Bao giờ Sếp nói "OK / Duyệt" thì mới được đóng task xuất xưởng!**
+
 
 
 ---

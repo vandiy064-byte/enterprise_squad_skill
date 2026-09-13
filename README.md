@@ -22,7 +22,7 @@
 
 ---
 
-## 🔄 Sơ Đồ Điều Phối: Giám Đốc Chỉ Huy & Sếp Duyệt
+## 🔄 Sơ Đồ Điều Phối: Giám Đốc Chỉ Huy ➔ Codex Kiểm Định ➔ Sếp Duyệt
 
 ```mermaid
 flowchart TD
@@ -38,12 +38,15 @@ flowchart TD
     
     A2 & A3 & A4 & A5 & A6 & A7 & A8 -->|Báo cáo ngược từng việc| Dir
     
-    Dir -->|Gộp toàn bộ thành dự án hoàn chỉnh| GateBoss{"👑 SẾP KIỂM ĐỊNH\n(Executive Gate)"}
+    Dir -->|Gộp dự án hoàn chỉnh| Codex["⚡ CODEX KIỂM ĐỊNH & THỬ NGHIỆM ĐỘC LẬP\n• Chạy thử nghiệm thực tế (Trial Run)\n• Phân tích & Nhận xét chất lượng 7 nhân viên\n• Xuất bản: docs/CODEX_AUDIT_REPORT.md"]
+    
+    Codex -->|Đạt chuẩn 100% kèm Báo cáo Thẩm định| GateBoss{"👑 SẾP DUYỆT\n(Executive Gate)"}
     
     GateBoss -- "Sếp nói 'OK / DUYỆT'" --> Release["🎉 XUẤT XƯỞNG BÀN GIAO HOÀN HẢO!"]
     GateBoss -- "Sếp nói 'CHƯA ĐƯỢC / CẦN SỬA'" --> Fix["🔍 Giám Đốc truy vết sơ đồ, chỉ đạo\nđúng nhân viên sửa lỗi đến khi Sếp OK"]
     Fix --> Dir
 ```
+
 
 ---
 
