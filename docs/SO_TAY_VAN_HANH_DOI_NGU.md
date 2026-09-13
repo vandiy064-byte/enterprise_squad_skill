@@ -365,6 +365,8 @@ Một sprint được coi là **THÀNH CÔNG HOÀN HẢO** khi:
 
 ---
 
+---
+
 ## 11. QUY CHUẨN TỐI ƯU HÓA LƯỢNG TOKEN (TOKEN OPTIMIZATION PROTOCOL)
 
 Nhằm đảm bảo tiết kiệm **60% – 80% chi phí Token LLM**, giữ AI luôn nhạy bén và không bị nghẽn ngữ cảnh (Context Window Bloat), toàn đội tuân thủ nghiêm ngặt 6 tiêu chuẩn sau:
@@ -375,4 +377,23 @@ Nhằm đảm bảo tiết kiệm **60% – 80% chi phí Token LLM**, giữ AI l
 4. **Compact Handoff Summary:** Báo cáo bàn giao tại các Gate chỉ tóm tắt dưới 15 dòng (bảng / checklist), không viết văn xuôi rườm rà.
 5. **Context Compaction Resilience:** Luôn neo trạng thái cốt lõi vào dòng đầu `PROGRESS.md` và `Git commit`, giúp AI phục hồi 100% ngữ cảnh sau khi nén với ít hơn 100 tokens.
 6. **Giới Hạn File Dưới 250 Dòng:** Phân rã module nhỏ gọn, đảm bảo mỗi lượt đọc/ghi file luôn nằm trong giới hạn token an toàn.
+
+---
+
+## 12. MA TRẬN TÍCH HỢP TOÀN DIỆN 25 AGENT-SKILLS VÀO ĐỘI NGŨ
+
+Đội ngũ Enterprise Squad kế thừa trọn vẹn sức mạnh từ 25 bộ kỹ năng chuyên sâu của hệ sinh thái `agent-skills`:
+
+| Thành Viên Đội Ngũ | Kỹ Năng Kế Thừa Từ 25 Agent-Skills | Nhiệm Vụ Đỉnh Cao |
+|---|---|---|
+| **01. Giám Đốc (PM)** | `idea-refine`, `interview-me` | Phỏng vấn 3 câu, phản biện logic, chốt MVP 3-5 tính năng. |
+| **02. Kiến Trúc Sư (Arch)** | `spec-driven-development`, `api-and-interface-design`, `source-driven-development` | Dựng khung xương vững chắc, xuất Bộ 3 Sơ Đồ, chuẩn hóa Data Contracts. |
+| **03. Kỹ Sư Kế Hoạch (Plan)** | `planning-and-task-breakdown`, `constraint-driven-development` | Bẻ nhỏ Atomic Tasks, tạo điểm mốc Git Backup an toàn. |
+| **04. Lập Trình Backend (BE)** | `incremental-implementation` | Code từng phần nhỏ gọn, an toàn dữ liệu (.bak), bẫy lỗi đa luồng. |
+| **05. Kỹ Sư Giao Diện (FE)** | `frontend-ui-engineering`, Stitch MCP | UI Studio Dark Mode đẹp sinh động, hiệu ứng mượt mà, đồng bộ 100% 3 sơ đồ, cấm nút làm cảnh. |
+| **06. Kỹ Sư Kiểm Thử (QA)** | `test-driven-development`, `browser-testing-with-devtools`, `debugging-and-error-recovery`, `doubt-driven-development` | Nghiệm thu 2 tầng: 100% tests PASS, Chrome DevTools 0 lỗi đỏ, Auto-Fix loop tối đa 3 lần. |
+| **07. Chuyên Gia Bảo Mật (Rev)** | `security-and-hardening`, `code-review-and-quality`, `code-simplification` | Mô phỏng tấn công Red Teaming 5 đòn thâm nhập, quét 7 điểm an ninh, dọn sạch code rác. |
+| **08. Kỹ Sư Đóng Gói (Rel)** | `shipping-and-launch`, `ci-cd-and-automation`, `git-workflow-and-versioning`, `documentation-and-adrs` | Launcher 1-click `run.bat`, Git Conventional Commits Tiếng Việt, cẩm nang HD_SU_DUNG.md chi tiết. |
+| **🌐 Toàn Đội Ngũ** | `context-engineering`, `performance-optimization` | Tuân thủ tháp ngữ cảnh 5 tầng, nạp JIT, diff-only, tối ưu hóa vòng việc và token tuyệt đối. |
+
 

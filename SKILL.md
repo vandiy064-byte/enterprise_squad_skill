@@ -108,8 +108,25 @@ Hệ thống kỹ năng điều phối **Mô Hình Quản Trị: 1 Giám Đốc 
 
 ---
 
-## V. CÁC CÁCH KÍCH HOẠT SKILL NÀY
+## V. MA TRẬN TÍCH HỢP TINH HOA 25 AGENT-SKILLS (SUPREME SKILL FUSION)
 
+Kỹ năng này là sự hợp nhất đỉnh cao giữa **Đội Ngũ 8 Agent + Giám Sát Codex** với **Toàn Bộ 25 Agent-Skills Chuyên Sâu**:
+
+| Nhóm Năng Lực | 25 Agent-Skills Tinh Hoa Tích Hợp | Vị Trí Kế Thừa | Giá Trị Tối Ưu Mang Lại |
+|---|---|:---:|---|
+| **1. Ý Tưởng & Phản Biện** | `idea-refine`, `interview-me` | 🎯 Agent 01 (PM) | Gọt giũa bài toán, phỏng vấn 3 câu, chốt MVP 3-5 tính năng, gạt bỏ 100% rườm rà. |
+| **2. Kiến Trúc & Đặc Tả** | `spec-driven-development`, `api-and-interface-design`, `source-driven-development` | 🏛️ Agent 02 (Arch) | Khung xương vững chắc, Bộ 3 Sơ Đồ (Cấu trúc, Quy trình, Chức năng), Data Contracts chuẩn chỉ. |
+| **3. Lập Kế Hoạch & Ràng Buộc** | `planning-and-task-breakdown`, `constraint-driven-development` | 📋 Agent 03 (Plan) | Bẻ nhỏ Atomic Tasks SMART-A, tạo mốc Git Backup an toàn, không giẫm chân nhau. |
+| **4. Lập Trình Tuần Tự** | `incremental-implementation` | ⚙️ Agent 04 (BE) | Code từng phần nhỏ gọn, 100% Type Hinting, bẫy lỗi đa luồng, an toàn dữ liệu (.bak). |
+| **5. Giao Diện & Thẩm Mỹ** | `frontend-ui-engineering`, Stitch MCP | 🎨 Agent 05 (FE) | UI Obsidian Dark Mode đẹp sinh động, hiệu ứng chuyển động, đồng bộ 100% với 3 sơ đồ, cấm nút làm cảnh. |
+| **6. Kiểm Thử & Tự Phục Hồi** | `test-driven-development`, `browser-testing-with-devtools`, `debugging-and-error-recovery`, `doubt-driven-development` | 🧪 Agent 06 (QA) | TDD 100% PASS, DevTools 0 lỗi đỏ, Auto-Fix Loop tự sửa tối đa 3 lần. |
+| **7. Bảo Mật & Đối Kháng** | `security-and-hardening`, `code-review-and-quality`, `code-simplification` | 🛡️ Agent 07 (Rev) | Red Teaming 5 đòn tấn công mô phỏng, quét 7 điểm bảo mật, Clean Code tối giản, dọn sạch code rác. |
+| **8. Xuất Xưởng & Tự Động Hóa** | `shipping-and-launch`, `ci-cd-and-automation`, `git-workflow-and-versioning`, `documentation-and-adrs` | 🚀 Agent 08 (Rel) | Launcher 1-click `run.bat`, Git Conventional Commits Tiếng Việt, cẩm nang HD_SU_DUNG.md chi tiết. |
+| **9. Siêu Tối Ưu Token & Ngữ Cảnh** | `context-engineering`, `performance-optimization` | 🌐 Toàn Đội | Tháp ngữ cảnh 5 tầng, nạp đúng lúc (JIT), Diff-Only, khống chế file < 250 dòng, tiết kiệm 80% token. |
+
+---
+
+## VI. CÁC CÁCH KÍCH HOẠT SKILL NÀY
 
 Skill này được kích hoạt tự động theo 3 cách:
 
@@ -125,14 +142,17 @@ Skill này được kích hoạt tự động theo 3 cách:
 
 ---
 
-## V. TÀI LIỆU THAM CHIẾU VẬN HÀNH
+## VII. TÀI LIỆU THAM CHIẾU VẬN HÀNH
 
 - Sổ tay vận hành 10 chương: [`docs/SO_TAY_VAN_HANH_DOI_NGU.md`](file:///e:/app%20tools/docs/SO_TAY_VAN_HANH_DOI_NGU.md)
 - Thẻ tra cứu nhanh: [`SQUAD_QUICKSTART.md`](file:///e:/app%20tools/SQUAD_QUICKSTART.md)
+- Báo cáo kiểm định độc lập của Codex: [`docs/CODEX_AUDIT_REPORT.md`](file:///e:/app%20tools/docs/CODEX_AUDIT_REPORT.md)
+- Cẩm nang kiểm thử với GPT/Codex: [`docs/CODEX_GPT_AUDIT_GUIDE.md`](file:///e:/app%20tools/docs/CODEX_GPT_AUDIT_GUIDE.md)
+- Báo cáo tấn công mô phỏng Red Teaming: [`docs/ADVERSARIAL_ATTACK_REPORT.md`](file:///e:/app%20tools/docs/ADVERSARIAL_ATTACK_REPORT.md)
 
 ---
 
-## VI. GIAO THỨC TỐI ƯU HÓA LƯỢNG TOKEN (TOKEN OPTIMIZATION PROTOCOL - TOP)
+## VIII. GIAO THỨC TỐI ƯU HÓA LƯỢNG TOKEN & VÒNG VIỆC (ZERO-WASTE CONTEXT ENGINE)
 
 Để đảm bảo dự án chạy mượt mà, phản hồi cực nhanh và tiết kiệm **60% – 80% chi phí Token LLM**, toàn bộ 8 Agent BẮT BUỘC tuân thủ 6 Trụ Cột Tối Ưu Token sau:
 
