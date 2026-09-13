@@ -53,10 +53,10 @@ Hệ thống kỹ năng điều phối **Mô Hình Quản Trị: 1 Giám Đốc 
 
 | Nhân Viên | Chức Năng Chuyên Môn | Nội Dung Làm Việc Riêng Lẻ | ⚡ Codex Giám Sát Chi Tiết |
 |---|---|---|---|
-| **Nhân viên 02** | 🏛️ Kiến Trúc Sư Trưởng | Thiết kế Clean Architecture 4 tầng, data model & API interfaces. | **Codex soi bản vẽ SPEC:** Kiểm tra circular dependency, tách module < 250 dòng. |
+| **Nhân viên 02** | 🏛️ Kiến Trúc Sư Trưởng | Vẽ khung xương kiến trúc vững chắc, chính xác từng chi tiết, xuất đủ Bộ 3 Sơ Đồ. | **Codex soi bản vẽ SPEC:** Kiểm tra độ vững khung xương, Bộ 3 Sơ đồ, circular dependency. |
 | **Nhân viên 03** | 📋 Tech Lead Kế Hoạch | Chia nhỏ Atomic Tasks SMART-A, tạo điểm Git Backup. | **Codex soi kế hoạch PLAN:** Xác thực Git commit backup hash, tính nguyên tử của task. |
 | **Nhân viên 04** | ⚙️ Lập Trình Backend | Code logic cốt lõi, đa luồng, an toàn file (.bak). | **Codex soi từng dòng code:** Bắt buộc 100% Type Hinting, bẫy lỗi `try...except`. |
-| **Nhân viên 05** | 🎨 Thiết Kế Frontend | Dựng UI Studio Dark Mode bằng Stitch MCP. | **Codex soi giao diện:** Kiểm tra thuộc tính thẻ semantic, 0 lỗi cú pháp HTML/CSS/JS. |
+| **Nhân viên 05** | 🎨 Thiết Kế Frontend | Dựng UI Studio Dark Mode sinh động có hiệu ứng, liên kết đồng bộ 100% Bộ 3 Sơ Đồ. | **Codex soi giao diện:** Kiểm tra độ sinh động, hiệu ứng, tính đồng bộ với 3 sơ đồ, cấm nút đơ/làm cảnh. |
 | **Nhân viên 06** | 🧪 Kiểm Thử QA | Chạy Backend Unit Tests + Chrome DevTools. | **Codex soi kết quả kiểm thử:** Đảm bảo 100% test PASS, 0 lỗi đỏ JS console/network. |
 | **Nhân viên 07** | 🛡️ Bảo Mật & Tấn Công Đối Kháng | Mô phỏng tấn công đối kháng (Red Teaming), review 5 chiều, quét 7 điểm bảo mật. | **Codex soi an ninh & đòn tấn công:** Quét sạch bí mật, API key, kiểm định 5 kịch bản tấn công mô phỏng, loại bỏ dead code. |
 | **Nhân viên 08** | 🚀 Đóng Gói DevOps | Tạo launcher 1-click `run.bat`, commit Git Tiếng Việt. | **Codex chạy thử nghiệm (Trial Run):** Chạy thực tế xem app mở mượt mà không lỗi. |
