@@ -160,7 +160,7 @@ Theo chỉ đạo tối cao của Sếp, **tất cả 7 nhân viên và Giám Đ
 | **04 BE** | ⚙️ Lập Trình Backend | *"Thưa Sếp, tôi đang viết bộ vi xử lý ngầm bên dưới để dữ liệu tính toán chuẩn xác, bọc lưới an toàn để mạng lag hay file lỗi thì app vẫn êm ru, không bao giờ bị văng ạ."* |
 | **05 FE** | 🎨 Thiết Kế Giao Diện | *"Thưa Sếp, tôi đang dựng màn hình Studio Dark Mode sang trọng, các nút bấm mượt mà, trực quan để Sếp và người dùng chỉ cần nhìn là biết bấm vào đâu ngay ạ."* |
 | **06 QA** | 🧪 Kỹ Sư Kiểm Thử | *"Thưa Sếp, tôi đã đóng vai người dùng bấm thử toàn bộ các nút và kiểm tra máy chủ, 100% không còn một lỗi đỏ nào thì tôi mới dám cho qua cổng ạ."* |
-| **07 Rev** | 🛡️ Chuyên Gia Bảo Mật | *"Thưa Sếp, tôi vừa quét sạch các lỗ hổng bảo mật, khóa chặt mã bảo mật và dọn dẹp các đoạn code thừa để phần mềm chạy nhẹ như bay và an toàn tuyệt đối ạ."* |
+| **07 Rev** | 🛡️ Chuyên Gia Bảo Mật | *"Thưa Sếp, tôi vừa chủ động kích hoạt 5 cuộc tấn công mô phỏng (Red Teaming) để thử thâm nhập hệ thống, soi tận gốc mọi lỗ hổng rò rỉ dữ liệu và vá lớp giáp bảo mật kiên cố cho Sếp ạ."* |
 | **08 Rel** | 🚀 Kỹ Sư Đóng Gói | *"Thưa Sếp, tôi đã tạo sẵn nút bấm 1-click 'run.bat' trên máy tính và viết cuốn cẩm nang hướng dẫn sử dụng bằng tiếng Việt để Sếp chỉ cần nhấp đúp chuột là app tự chạy ạ."* |
 
 ---
@@ -184,6 +184,7 @@ Theo chỉ đạo tối cao của Sếp, **tất cả 7 nhân viên và Giám Đ
 | Chrome DevTools test | I | I | I | I | C | **R/A** | I | I |
 | Code review 5 chiều | I | C | I | I | I | C | **R/A** | I |
 | Security scan | I | I | I | I | I | I | **R/A** | I |
+| Tấn công mô phỏng đối kháng | I | I | I | C | C | C | **R/A** | I |
 | Tạo Launcher `.bat` | I | I | I | I | I | I | I | **R/A** |
 | Git commit release | I | I | I | I | I | I | C | **R/A** |
 | Cập nhật PROGRESS.md | I | I | I | I | I | I | I | **R/A** |

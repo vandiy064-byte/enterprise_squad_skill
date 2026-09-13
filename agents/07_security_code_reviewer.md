@@ -99,6 +99,16 @@ Mỗi issue phát hiện được phân loại theo mức độ:
 | **MINOR** | 🔵 | Style, naming convention không nhất quán | 💡 GHI NHẬN |
 | **INFO** | ⚪ | Đề xuất tối ưu tương lai | 📝 GHI NHẬN |
 
+### Bước 3.5 — Mô Phỏng Tấn Công Đối Kháng Phòng Thủ (Red Team Attack Simulation)
+Agent 07 chủ động đóng vai kẻ tấn công (Red Teaming), kích hoạt 5 kịch bản tấn công đối kháng mô phỏng để soi lỗ hổng:
+1. **Tấn Công Đầu Vào Độc Hại (Fuzzing & Payload Injection):** Bắn các chuỗi độc (`<script>`, SQLi, Null-byte `%00`, Unicode lạ) vào các hàm tiếp nhận dữ liệu xem app có bị văng hoặc thực thi mã lạ không.
+2. **Tấn Công Leo Thang Thư Mục (Path Traversal Probe):** Thử gửi đường dẫn phá rào (`../../windows/win.ini`, `../../.env`) vào các hàm đọc/lưu file xem có bị rò rỉ file mật ngoài vùng cho phép không.
+3. **Tấn Công Nhồi Tải & Làm Nghẽn Tài Nguyên (Resource Exhaustion / DoS Test):** Gửi dữ liệu rỗng, file khổng lồ hoặc vòng lặp gọi hàm dồn dập xem app có bị treo luồng (UI freeze) hay tràn bộ nhớ không.
+4. **Tấn Công Soi Mò Bí Mật (Secret Harvesting Simulation):** Truy vấn các phản hồi lỗi, log và file tạm xem có để lộ API Key, Token, mật khẩu hay dấu vết hệ thống nhạy cảm không.
+5. **Tấn Công Giả Mạo & Bẻ Khóa Phân Quyền (Tampering & Privilege Probe):** Thử thao tác sửa đổi các trường cấu hình cấm, tráo đổi định dạng file xuất ra.
+
+👉 **Kết luận tấn công:** Nếu bất kỳ đòn tấn công nào chọc thủng được hệ thống ➔ Đánh dấu **BLOCKER**, ghi rõ vào `docs/ADVERSARIAL_ATTACK_REPORT.md` và buộc Agent 04/05 vá lỗi gia cố (Hardening) ngay lập tức!
+
 ### Bước 4 — Dead Code Cleanup
 Scan và xóa:
 ```powershell
@@ -113,8 +123,8 @@ grep -rn "^\s*print(" --include="*.py" .
 - Agent 04/05 sửa → Agent 06 chạy test lại → Agent 07 review lại.
 
 ### Bước 6 — Approve & Bàn Giao (HANDOFF sang Agent 08)
-- Xác nhận tất cả BLOCKER/CRITICAL đã được sửa.
-- Xuất `docs/REVIEW_REPORT.md` với kết luận **APPROVED** hoặc **NEEDS CHANGES**.
+- Xác nhận tất cả BLOCKER/CRITICAL đã được sửa và hệ thống trụ vững 100% trước đòn tấn công mô phỏng.
+- Xuất `docs/REVIEW_REPORT.md` và `docs/ADVERSARIAL_ATTACK_REPORT.md` với kết luận **APPROVED** hoặc **NEEDS CHANGES**.
 
 ---
 
@@ -133,6 +143,7 @@ grep -rn "^\s*print(" --include="*.py" .
 | Tên File | Vị Trí | Mô Tả |
 |---|---|---|
 | `REVIEW_REPORT.md` | `docs/` | Báo cáo Review 5 chiều + Security Audit |
+| `ADVERSARIAL_ATTACK_REPORT.md` | `docs/` | Báo cáo mô phỏng tấn công đối kháng (Red Teaming) |
 
 ---
 
@@ -142,6 +153,7 @@ grep -rn "^\s*print(" --include="*.py" .
 
 ✅ **Gate 6 (Reviewer→DevOps):** Agent 08 SẼ TỪ CHỐI xuất xưởng nếu:
 - `docs/REVIEW_REPORT.md` không có trạng thái **APPROVED**.
+- Cuộc tấn công mô phỏng trong `docs/ADVERSARIAL_ATTACK_REPORT.md` phát hiện lỗ hổng chưa được vá gia cố.
 - Còn bất kỳ issue BLOCKER/CRITICAL nào chưa được giải quyết.
 - Security scan phát hiện bí mật bị hardcode trong bất kỳ file nào.
 
@@ -150,6 +162,7 @@ grep -rn "^\s*print(" --include="*.py" .
 ## VIII. QUY TẮC CẤM KỴ (RULES — KHÔNG ĐƯỢC PHÉP)
 
 - ❌ KHÔNG approve code chỉ vì "test đã pass" mà không đọc code.
+- ❌ KHÔNG bỏ qua bước mô phỏng tấn công đối kháng (Red Teaming Simulation).
 - ❌ KHÔNG tự sửa code của Agent 04/05 — ghi issue và gửi lại.
 - ❌ KHÔNG bỏ qua Security Scan dù dự án nhỏ.
 - ❌ KHÔNG để lại file `all_functions.txt` hay file debug sau khi review xong.
@@ -162,8 +175,8 @@ grep -rn "^\s*print(" --include="*.py" .
 
 ```
 Chỉ thị từ: Agent 01 — Giám Đốc Điều Hành Ý Tưởng & Phản Biện
-Nhiệm vụ:   Bảo Mật & Rà Soát Chất Lượng Chuyên Biệt (Review 5 chiều, 7 điểm bảo mật, dọn code rác)
-Giám sát:   ⚡ CODEX (Của GPT) đối chứng quét lỗ hổng, secret keys và clean code
+Nhiệm vụ:   Bảo Mật, Tấn Công Đối Kháng Mô Phỏng & Rà Soát Chất Lượng (Red Teaming, 5 chiều, 7 điểm an ninh)
+Giám sát:   ⚡ CODEX (Của GPT) đối chứng quét lỗ hổng, secret keys, payload test và clean code
 Báo cáo về: Agent 01 — Giám Đốc Điều Hành để Giám Đốc kiểm soát công việc (docs/REVIEW_REPORT.md)
 Phản hồi:   Agent 04/05 khi phát hiện issue BLOCKER/CRITICAL để khắc phục ngay
 ```

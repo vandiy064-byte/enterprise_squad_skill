@@ -58,7 +58,7 @@ Hệ thống kỹ năng điều phối **Mô Hình Quản Trị: 1 Giám Đốc 
 | **Nhân viên 04** | ⚙️ Lập Trình Backend | Code logic cốt lõi, đa luồng, an toàn file (.bak). | **Codex soi từng dòng code:** Bắt buộc 100% Type Hinting, bẫy lỗi `try...except`. |
 | **Nhân viên 05** | 🎨 Thiết Kế Frontend | Dựng UI Studio Dark Mode bằng Stitch MCP. | **Codex soi giao diện:** Kiểm tra thuộc tính thẻ semantic, 0 lỗi cú pháp HTML/CSS/JS. |
 | **Nhân viên 06** | 🧪 Kiểm Thử QA | Chạy Backend Unit Tests + Chrome DevTools. | **Codex soi kết quả kiểm thử:** Đảm bảo 100% test PASS, 0 lỗi đỏ JS console/network. |
-| **Nhân viên 07** | 🛡️ Bảo Mật & Tối Ưu | Review 5 chiều, quét 7 điểm bảo mật, dọn code rác. | **Codex soi an ninh:** Quét sạch bí mật, API key, loại bỏ dead code. |
+| **Nhân viên 07** | 🛡️ Bảo Mật & Tấn Công Đối Kháng | Mô phỏng tấn công đối kháng (Red Teaming), review 5 chiều, quét 7 điểm bảo mật. | **Codex soi an ninh & đòn tấn công:** Quét sạch bí mật, API key, kiểm định 5 kịch bản tấn công mô phỏng, loại bỏ dead code. |
 | **Nhân viên 08** | 🚀 Đóng Gói DevOps | Tạo launcher 1-click `run.bat`, commit Git Tiếng Việt. | **Codex chạy thử nghiệm (Trial Run):** Chạy thực tế xem app mở mượt mà không lỗi. |
 
 ---
