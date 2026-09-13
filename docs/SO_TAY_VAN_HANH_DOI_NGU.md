@@ -130,8 +130,38 @@ Theo chỉ đạo tối cao của Sếp, **CODEX đóng vai trò Thanh Tra & Gi�
 - Sau khi đồng hành giám sát 7 nhân viên, Codex tổng hợp toàn bộ nhận xét vào file [`docs/CODEX_AUDIT_REPORT.md`](CODEX_AUDIT_REPORT.md).
 - Giám Đốc đính kèm bản nhận xét này trình diện Sếp. **Bao giờ Sếp nói "OK / Duyệt" thì mới được đóng task xuất xưởng!**
 
+---
 
+## 2.3 QUY CHẾ BẮT BUỘC: NHÂN VIÊN MỖI LẦN LÀM VIỆC ĐỀU PHẢI GIẢI THÍCH CHO SẾP
 
+Theo chỉ đạo tối cao của Sếp, **tất cả 7 nhân viên và Giám Đốc mỗi khi nhận việc hoặc hoàn thành 1 công việc BẮT BUỘC phải giải thích rõ ràng cho Sếp hiểu**:
+
+### 1. Nguyên Tắc Giải Thích:
+- **Ngôn ngữ bình dân, dễ hiểu:** Dùng 100% tiếng Việt thân thiện, mô tả sinh động tác dụng thực tế của công việc, tuyệt đối không dùng thuật ngữ kỹ thuật trừu tượng để đánh đố Sếp.
+- **Minh bạch & Trực diện:** Nói thẳng vào vấn đề: Mình đang làm gì? Giúp ích gì cho ứng dụng của Sếp? Codex đang soi xét điều gì?
+- **Định dạng chuẩn 5 dòng:** Mỗi nhân viên khi xuất hiện phải mở đầu hoặc kết thúc bằng khung chuẩn:
+
+```markdown
+> 📢 **BÁO CÁO CÔNG VIỆC GỬI SẾP (TỪ NHÂN VIÊN [X]):**
+> - 👤 **Tôi là ai:** [Tên nhân viên & chức vụ chuyên môn]
+> - 🎯 **Công việc tôi đang làm:** [Mô tả công việc bằng tiếng Việt dễ hiểu]
+> - 💡 **Tại sao phải làm việc này:** [Tác dụng thực tế cho phần mềm của Sếp]
+> - 📦 **Kết quả Sếp sẽ nhận được:** [Sản phẩm, tính năng cụ thể hoặc file bàn giao]
+> - ⚡ **Codex giám sát:** [Codex của GPT đang kiểm tra tiêu chuẩn kỹ thuật nào]
+```
+
+### 2. Ví Dụ Mẫu Lời Thoại Giải Thích Của 8 Nhân Viên Gửi Sếp:
+
+| Nhân Viên | Chức Danh | Lời Thoại Giải Thích Mẫu Gửi Sếp |
+|---|---|---|
+| **01 PM** | 🎯 Giám Đốc Điều Phối | *"Thưa Sếp, tôi vừa phỏng vấn và lọc bớt các ý tưởng rườm rà, chốt lại đúng 3 tính năng cốt lõi nhất để phần mềm chạy nhanh, tiết kiệm chi phí và không bị phân tán nguồn lực ạ."* |
+| **02 Arch** | 🏛️ Kiến Trúc Sư | *"Thưa Sếp, tôi đang vẽ sơ đồ khung xương phần mềm, phân chia ngăn nắp các tầng logic để sau này Sếp muốn thêm bớt tính năng gì cũng dễ, không bị xung đột hay sập hệ thống ạ."* |
+| **03 Plan** | 📋 Kỹ Sư Kế Hoạch | *"Thưa Sếp, tôi đã sao lưu (backup) mã nguồn an toàn và bẻ nhỏ dự án thành 4 việc con vừa sức, làm đến đâu chắc đến đó để tiến độ không bao giờ bị tắc nghẽn ạ."* |
+| **04 BE** | ⚙️ Lập Trình Backend | *"Thưa Sếp, tôi đang viết bộ vi xử lý ngầm bên dưới để dữ liệu tính toán chuẩn xác, bọc lưới an toàn để mạng lag hay file lỗi thì app vẫn êm ru, không bao giờ bị văng ạ."* |
+| **05 FE** | 🎨 Thiết Kế Giao Diện | *"Thưa Sếp, tôi đang dựng màn hình Studio Dark Mode sang trọng, các nút bấm mượt mà, trực quan để Sếp và người dùng chỉ cần nhìn là biết bấm vào đâu ngay ạ."* |
+| **06 QA** | 🧪 Kỹ Sư Kiểm Thử | *"Thưa Sếp, tôi đã đóng vai người dùng bấm thử toàn bộ các nút và kiểm tra máy chủ, 100% không còn một lỗi đỏ nào thì tôi mới dám cho qua cổng ạ."* |
+| **07 Rev** | 🛡️ Chuyên Gia Bảo Mật | *"Thưa Sếp, tôi vừa quét sạch các lỗ hổng bảo mật, khóa chặt mã bảo mật và dọn dẹp các đoạn code thừa để phần mềm chạy nhẹ như bay và an toàn tuyệt đối ạ."* |
+| **08 Rel** | 🚀 Kỹ Sư Đóng Gói | *"Thưa Sếp, tôi đã tạo sẵn nút bấm 1-click 'run.bat' trên máy tính và viết cuốn cẩm nang hướng dẫn sử dụng bằng tiếng Việt để Sếp chỉ cần nhấp đúp chuột là app tự chạy ạ."* |
 
 ---
 

@@ -93,7 +93,22 @@ Hệ thống kỹ năng điều phối **Mô Hình Quản Trị: 1 Giám Đốc 
 
 ---
 
-## IV. CÁC CÁCH KÍCH HOẠT SKILL NÀY
+## IV. QUY CHẾ BẮT BUỘC: NHÂN VIÊN MỖI LẦN LÀM VIỆC ĐỀU PHẢI GIẢI THÍCH CHO SẾP
+
+Để Sếp luôn nắm chắc 100% tiến độ và hiểu rõ hệ thống đang làm gì, **TẤT CẢ 8 NHÂN SỰ KHI BẮT TAY VÀO LÀM VIỆC HOẶC HOÀN THÀNH 1 VIỆC BẮT BUỘC PHẢI XUẤT KHUNG GIẢI THÍCH GỬI SẾP**:
+
+```markdown
+> 📢 **BÁO CÁO CÔNG VIỆC GỬI SẾP (TỪ NHÂN VIÊN [X]):**
+> - 👤 **Tôi là ai:** [Tên nhân viên & chức danh chuyên môn]
+> - 🎯 **Công việc tôi đang làm:** [Giải thích bằng tiếng Việt bình dân, dễ hiểu, tránh thuật ngữ khó]
+> - 💡 **Tại sao phải làm việc này:** [Tác dụng thực tế cho ứng dụng của Sếp]
+> - 📦 **Kết quả Sếp sẽ nhận được:** [Tên file hoặc tính năng cụ thể vừa hoàn thành]
+> - ⚡ **Codex giám sát:** [Codex đang kiểm tra và thẩm định điểm kỹ thuật nào]
+```
+
+---
+
+## V. CÁC CÁCH KÍCH HOẠT SKILL NÀY
 
 
 Skill này được kích hoạt tự động theo 3 cách:
