@@ -107,17 +107,29 @@ Giám Đốc gộp toàn bộ dự án và chỉ khi **Sếp Lớn (Người Dù
 
 ---
 
-## 2.2 CƠ CHẾ KIỂM ĐỊNH ĐỘC LẬP QUA CODEX (CODEX AUDIT GATE)
+## 2.2 CƠ CHẾ CODEX (CỦA GPT) GIÁM SÁT TỪNG NHÂN VIÊN LÀM VIỆC (STEP-BY-STEP CODEX OVERSIGHT)
 
-Trước khi sản phẩm được đưa lên bàn Sếp, dự án bắt buộc phải vượt qua kỳ sát hạch độc lập của **CODEX**:
-1. **Chạy Thử Nghiệm Thực Tế (Trial Run):** Codex trực tiếp kích hoạt khởi chạy hệ thống, gọi API, thao tác UI thực tế để đảm bảo không bị đơ, không bị crash âm thầm.
-2. **Phân Tích & Nhận Xét Khách Quan:** Codex đánh giá 4 khía cạnh:
-   - *Tính tối ưu:* Tài nguyên CPU/RAM, số dòng code (< 250 dòng), hiệu quả token.
-   - *Tính chính xác:* Đúng theo sơ đồ Clean Architecture và PRD của Giám Đốc.
-   - *Tính an toàn:* Bẫy lỗi ngoại lệ `try...except`, an toàn file `.bak`, không lộ API keys.
-   - *Độ ăn khớp:* 7 nhân viên ráp nối module có mượt mà, trơn tru không.
-3. **Xuất Báo Cáo Thẩm Định:** Codex ban hành tệp [`docs/CODEX_AUDIT_REPORT.md`](CODEX_AUDIT_REPORT.md).
-4. **Cổng Phê Duyệt Của Sếp:** Giám Đốc trình toàn bộ dự án kèm báo cáo Codex lên Sếp. **Bao giờ Sếp nói "OK / Duyệt" thì mới được đóng task xuất xưởng!**
+Theo chỉ đạo tối cao của Sếp, **CODEX đóng vai trò Thanh Tra & Giám Sát Trưởng Độc Lập**, đồng hành giám sát trực tiếp từng bước đi của từng nhân viên:
+
+1. **Giám Sát Nhân Viên 02 (Kiến trúc sư):**
+   - Codex thẩm định bản vẽ `docs/SPEC.md`, soi xét cây cú pháp AST GitNexus, đảm bảo phân tầng Clean Architecture 4 tầng chuẩn chỉ, cấm tiệt circular dependency.
+2. **Giám Sát Nhân Viên 03 (Lập kế hoạch):**
+   - Codex soi xét kế hoạch `docs/PLAN.md`, kiểm tra xem điểm Git Backup đã được tạo chưa, các Atomic Tasks có đúng chuẩn SMART-A (< 150 dòng/task) không.
+3. **Giám Sát Nhân Viên 04 (Lập trình Backend):**
+   - Codex soi từng hàm, từng dòng code: Bắt buộc 100% Type Hinting, bẫy lỗi `try...except`, thao tác file an toàn Atomic Write (`.bak`), giữ file < 250 dòng.
+4. **Giám Sát Nhân Viên 05 (Thiết kế Frontend):**
+   - Codex soi cấu trúc giao diện: Đảm bảo phong cách Obsidian Studio Dark Mode, Design System đồng bộ qua Stitch MCP, chống tự gõ HTML thô sơ.
+5. **Giám Sát Nhân Viên 06 (Kiểm thử QA):**
+   - Codex giám sát kết quả nghiệm thu: Bắt buộc 100% Backend Tests PASS và Chrome DevTools 0 lỗi đỏ JS console/network.
+6. **Giám Sát Nhân Viên 07 (Bảo mật & Clean Code):**
+   - Codex đối chứng rà soát: Quét sạch 7 điểm an toàn bảo mật, cấm hardcode secrets, loại bỏ toàn bộ dead code.
+7. **Giám Sát Nhân Viên 08 (Đóng gói DevOps):**
+   - Codex trực tiếp kích hoạt chạy thử nghiệm thực tế (Trial Run) launcher 1-click `run.bat` để đảm bảo app mở mượt mà trên môi trường thật.
+
+👉 **Xuất Bản Báo Cáo & Trình Sếp Duyệt:**
+- Sau khi đồng hành giám sát 7 nhân viên, Codex tổng hợp toàn bộ nhận xét vào file [`docs/CODEX_AUDIT_REPORT.md`](CODEX_AUDIT_REPORT.md).
+- Giám Đốc đính kèm bản nhận xét này trình diện Sếp. **Bao giờ Sếp nói "OK / Duyệt" thì mới được đóng task xuất xưởng!**
+
 
 
 

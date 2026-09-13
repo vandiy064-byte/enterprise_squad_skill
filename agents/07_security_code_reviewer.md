@@ -163,7 +163,9 @@ grep -rn "^\s*print(" --include="*.py" .
 ```
 Chỉ thị từ: Agent 01 — Giám Đốc Điều Hành Ý Tưởng & Phản Biện
 Nhiệm vụ:   Bảo Mật & Rà Soát Chất Lượng Chuyên Biệt (Review 5 chiều, 7 điểm bảo mật, dọn code rác)
+Giám sát:   ⚡ CODEX (Của GPT) đối chứng quét lỗ hổng, secret keys và clean code
 Báo cáo về: Agent 01 — Giám Đốc Điều Hành để Giám Đốc kiểm soát công việc (docs/REVIEW_REPORT.md)
 Phản hồi:   Agent 04/05 khi phát hiện issue BLOCKER/CRITICAL để khắc phục ngay
 ```
+
 

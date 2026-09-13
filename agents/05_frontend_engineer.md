@@ -196,7 +196,9 @@ self.progress_bar.set(progress / 100)  # Gây lỗi crash tkinter!
 ```
 Chỉ thị từ: Agent 01 — Giám Đốc Điều Hành Ý Tưởng & Phản Biện (dựa trên docs/PLAN.md)
 Nhiệm vụ:   Thiết Kế Giao Diện Frontend Chuyên Biệt (Web Studio / UI Dark Mode, Stitch MCP)
+Giám sát:   ⚡ CODEX (Của GPT) soi cấu trúc thẻ semantic, Design System, chống gõ HTML thô
 Báo cáo về: Agent 01 — Giám Đốc Điều Hành để Giám Đốc kiểm soát công việc (Mã nguồn Web/UI)
 Phối hợp:   Agent 04 — Backend Engineer (kết nối API và Schema dữ liệu)
 ```
+
 

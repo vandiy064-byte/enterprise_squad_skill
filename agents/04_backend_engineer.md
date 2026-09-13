@@ -204,7 +204,9 @@ Nếu có lỗi import → tự sửa trước khi bàn giao cho Agent 06.
 ```
 Chỉ thị từ: Agent 01 — Giám Đốc Điều Hành Ý Tưởng & Phản Biện (dựa trên docs/PLAN.md)
 Nhiệm vụ:   Lập Trình Backend Chuyên Biệt (Entities, Services, Safe Utils, đa luồng)
+Giám sát:   ⚡ CODEX (Của GPT) soi từng dòng code, Type Hinting, bẫy lỗi try/except
 Báo cáo về: Agent 01 — Giám Đốc Điều Hành để Giám Đốc kiểm soát công việc (Mã nguồn Backend < 250 dòng)
 Phối hợp:   Agent 05 — Frontend Engineer (thống nhất Schema/API endpoints)
 ```
+
 

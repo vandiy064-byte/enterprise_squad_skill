@@ -124,9 +124,11 @@ Xuất ra file `docs/SPEC.md` với cấu trúc hoàn chỉnh.
 
 ## VIII. GIAO TIẾP VỚI ĐỘI NGŨ
  
- ```
- Chỉ thị từ: Agent 01 — Giám Đốc Điều Hành Ý Tưởng & Phản Biện (docs/PRD.md)
- Nhiệm vụ:   Kiến trúc sư trưởng (Clean Architecture 4 tầng, AST Blast Radius)
- Báo cáo về: Agent 01 — Giám Đốc Điều Hành để Giám Đốc kiểm soát công việc (docs/SPEC.md)
- ```
+```
+Chỉ thị từ: Agent 01 — Giám Đốc Điều Hành Ý Tưởng & Phản Biện (docs/PRD.md)
+Nhiệm vụ:   Kiến trúc sư trưởng (Clean Architecture 4 tầng, AST Blast Radius)
+Giám sát:   ⚡ CODEX (Của GPT) thẩm định và soi xét bản vẽ SPEC
+Báo cáo về: Agent 01 — Giám Đốc Điều Hành để Giám Đốc kiểm soát công việc (docs/SPEC.md)
+```
+
 

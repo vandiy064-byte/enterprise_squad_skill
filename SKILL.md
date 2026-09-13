@@ -10,91 +10,85 @@ Hệ thống kỹ năng điều phối **Mô Hình Quản Trị: 1 Giám Đốc 
 
 ---
 
-## I. SƠ ĐỒ ĐIỀU PHỐI ĐỘI NGŨ: GIÁM ĐỐC CHỈ HUY ➔ CODEX KIỂM ĐỊNH ➔ SẾP PHÊ DUYỆT
+## I. SƠ ĐỒ ĐIỀU PHỐI ĐỘI NGŨ: GIÁM ĐỐC CHỈ HUY & CODEX GIÁM SÁT TỪNG NHÂN VIÊN
 
 ```
-                 👑 SẾP LỚN (NGƯỜI DÙNG)
-                 [Đưa Ý Tưởng] ───┐   ▲
-                                  │   │  (Sếp chỉ duyệt khi CODEX đã thẩm định xong
-                                  │   │   và Sếp nói "OK"! Nếu chưa OK: sửa tiếp)
-                                  ▼   │
-               ┌──────────────────────────────────────┐
-               │ 🎯 AGENT 01: GIÁM ĐỐC Ý TƯỞNG        │
-               │ • Phản biện: CẦN LÀM vs KHÔNG CẦN LÀM│
-               │ • Ban hành Chỉ thị cho 7 nhân viên   │
-               │ • Kiểm soát toàn bộ báo cáo ngược    │
-               │ • Gộp 7 phần thành dự án hoàn chỉnh  │
-               └──────────────────────────────────────┘
-                                  │  ▲ (Báo cáo ngược từng việc)
-       ┌───────────┬──────────────┼──────────────┬───────────┐
-       ▼           ▼              ▼              ▼           ▼
-  Nhân viên 02 Nhân viên 03  Nhân viên 04   Nhân viên 05 Nhân viên 06-08
-   (🏛️ Arch)   (📋 Plan)      (⚙️ Backend)   (🎨 Frontend) (🧪 QA - 🛡️ Sec - 🚀 DevOps)
-   [Chức năng: [Chức năng:    [Chức năng:    [Chức năng:   [Chức năng:
-    Kiến trúc]  Lập kế hoạch]  Logic & Data]  Giao diện UI] Kiểm thử, Bảo mật, Đóng gói]
-                                  │
-                                  ▼ (Gộp xong dự án)
-               ┌──────────────────────────────────────┐
-               │ ⚡ CODEX KIỂM ĐỊNH & THỬ NGHIỆM      │
-               │ • Chạy thử nghiệm thực tế (Trial Run)│
-               │ • Phân tích & Nhận xét độc lập 7 NV  │
-               │ • Xuất bản: docs/CODEX_AUDIT_REPORT  │
-               │   (Đạt chuẩn 100% mới chuyển tiếp)   │
-               └──────────────────────────────────────┘
-                                  │
-                                  ▼ (Kèm báo cáo Codex)
-                 👑 TRÌNH SẾP DUYỆT (Bao giờ Sếp nói "OK" mới xuất xưởng!)
+                           👑 SẾP LỚN (NGƯỜI DÙNG)
+                           [Giao Ý Tưởng] ───┐   ▲
+                                             │   │  (Sếp chỉ duyệt khi toàn bộ đã xong
+                                             ▼   │   và Sếp nói "OK"! Chưa OK: sửa tiếp)
+               ┌─────────────────────────────────────────────────┐
+               │ 🎯 AGENT 01: GIÁM ĐỐC Ý TƯỞNG & PHẢN BIỆN        │
+               │ • Phản biện: CẦN LÀM vs KHÔNG CẦN LÀM           │
+               │ • Ban hành Chỉ thị cho 7 nhân viên riêng lẻ     │
+               │ • Nhận báo cáo ngược & gộp dự án hoàn chỉnh     │
+               └─────────────────────────────────────────────────┘
+                                       │ 
+                                       ▼ (Chỉ thị phân việc)
+       ┌───────────────────────────────┴───────────────────────────────┐
+       ▼                                                               ▼
+  [7 NHÂN VIÊN CHUYÊN MÔN RIÊNG LẺ]               ⚡ CODEX (CỦA GPT) GIÁM SÁT TỪNG BƯỚC
+  • Nhân viên 02 (🏛️ Kiến trúc sư)   ◄────────►  Codex soi Clean Arch & GitNexus AST
+  • Nhân viên 03 (📋 Lập kế hoạch)    ◄────────►  Codex soi Atomic Tasks & Git Backup
+  • Nhân viên 04 (⚙️ Lập trình Backend)◄────────►  Codex soi từng dòng code & Safe I/O
+  • Nhân viên 05 (🎨 Thiết kế Frontend)◄────────►  Codex soi Design System & UI Stitch
+  • Nhân viên 06 (🧪 Kỹ sư Kiểm thử QA)◄────────►  Codex soi Unit Test & DevTools 0 lỗi
+  • Nhân viên 07 (🛡️ Rà soát Bảo mật)  ◄────────►  Codex soi lỗ hổng & Clean Code
+  • Nhân viên 08 (🚀 Đóng gói DevOps)  ◄────────►  Codex chạy thử nghiệm thực tế run.bat
+       └───────────────────────────────┬───────────────────────────────┘
+                                       │ ▲ (Báo cáo đạt chuẩn từng việc)
+                                       ▼
+               ┌─────────────────────────────────────────────────┐
+               │ 🎯 GIÁM ĐỐC GỘP TOÀN BỘ THÀNH DỰ ÁN HOÀN CHỈNH  │
+               │ ⚡ CODEX XUẤT BẢN: docs/CODEX_AUDIT_REPORT.md   │
+               └─────────────────────────────────────────────────┘
+                                       │
+                                       ▼ (Kèm báo cáo thẩm định Codex)
+                     👑 TRÌNH SẾP DUYỆT (Bao giờ Sếp nói "OK" mới xuất xưởng!)
 ```
 
 ---
 
-## II. BẢNG PHÂN CÔNG NHIỆM VỤ: 1 GIÁM ĐỐC, 7 NHÂN VIÊN & CODEX KIỂM ĐỊNH
+## II. BẢNG PHÂN CÔNG: 7 NHÂN VIÊN & CODEX GIÁM SÁT TỪNG TÁC VỤ
 
-| STT | Vị Trí | Nhiệm Vụ & Chức Năng Độc Lập | Quy Chế Báo Cáo Ngược & Kiểm Định |
+| Nhân Viên | Chức Năng Chuyên Môn | Nội Dung Làm Việc Riêng Lẻ | ⚡ Codex Giám Sát Chi Tiết |
 |---|---|---|---|
-| **01** | **🎯 Giám Đốc Ý Tưởng & Phản Biện** | Lãnh đạo tối cao. Tiếp nhận ý tưởng Sếp, phản biện **CẦN LÀM** vs **KHÔNG CẦN LÀM** (loại bỏ tính năng thừa, tiết kiệm token), ra chỉ thị cho 7 nhân viên, gộp sản phẩm và gửi sang Codex. | Trình diện Sếp kèm Báo cáo Codex. Chờ Sếp duyệt "OK". |
-| **02** | **🏛️ Nhân Viên Kiến Trúc Sư Trưởng** | Quét GitNexus AST Blast Radius, thiết kế Clean Architecture 4 tầng, data model & API interfaces. | Nộp bản vẽ `docs/SPEC.md` về Giám Đốc nghiệm thu. |
-| **03** | **📋 Nhân Viên Tech Lead Kế Hoạch** | Tạo điểm Git Backup an toàn, bẻ nhỏ công việc thành các Atomic Tasks SMART-A độc lập. | Nộp kế hoạch `docs/PLAN.md` về Giám Đốc nghiệm thu. |
-| **04** | **⚙️ Nhân Viên Lập Trình Backend** | Viết code logic nghiệp vụ cốt lõi, 100% Type Hinting, Threading ngầm chống đơ UI, Atomic File Write (.bak), giữ file < 250 dòng. | Nộp mã nguồn Backend về Giám Đốc kiểm tra. |
-| **05** | **🎨 Nhân Viên Thiết Kế Frontend** | Dựng giao diện Web Studio/GUI phong cách Obsidian Dark Mode, dùng Stitch MCP, chống tự gõ HTML thô sơ. | Nộp mã nguồn Frontend về Giám Đốc kiểm tra. |
-| **06** | **🧪 Nhân Viên Kiểm Thử QA** | Nghiệm thu thực nghiệm 2 tầng: Unit Tests Backend 100% PASS + Chrome DevTools 0 lỗi đỏ JS console/network, chụp ảnh nghiệm thu. | Nộp chứng chỉ 100% PASS về Giám Đốc kiểm tra. |
-| **07** | **🛡️ Nhân Viên Bảo Mật & Tối Ưu** | Review 5 chiều (Correctness, Readability, Architecture, Security, Performance), quét 7 điểm an toàn bảo mật, dọn code rác. | Nộp báo cáo Clean Code về Giám Đốc kiểm tra. |
-| **08** | **🚀 Nhân Viên Đóng Gói DevOps** | Tạo script khởi động 1-click `run.bat`, commit Git chuẩn Conventional Commits Tiếng Việt, cập nhật `PROGRESS.md`. | Nộp gói xuất xưởng về Giám Đốc gộp dự án. |
-| **⚡** | **⚡ Codex Thẩm Định Độc Lập** | Chạy thử nghiệm toàn luồng thực tế (Trial Run), phân tích, nhận xét đánh giá khách quan sản phẩm 7 nhân viên làm ra, xuất `docs/CODEX_AUDIT_REPORT.md`. | Trả kết quả thẩm định về Giám Đốc để Giám Đốc trình Sếp. |
+| **Nhân viên 02** | 🏛️ Kiến Trúc Sư Trưởng | Thiết kế Clean Architecture 4 tầng, data model & API interfaces. | **Codex soi bản vẽ SPEC:** Kiểm tra circular dependency, tách module < 250 dòng. |
+| **Nhân viên 03** | 📋 Tech Lead Kế Hoạch | Chia nhỏ Atomic Tasks SMART-A, tạo điểm Git Backup. | **Codex soi kế hoạch PLAN:** Xác thực Git commit backup hash, tính nguyên tử của task. |
+| **Nhân viên 04** | ⚙️ Lập Trình Backend | Code logic cốt lõi, đa luồng, an toàn file (.bak). | **Codex soi từng dòng code:** Bắt buộc 100% Type Hinting, bẫy lỗi `try...except`. |
+| **Nhân viên 05** | 🎨 Thiết Kế Frontend | Dựng UI Studio Dark Mode bằng Stitch MCP. | **Codex soi giao diện:** Kiểm tra thuộc tính thẻ semantic, 0 lỗi cú pháp HTML/CSS/JS. |
+| **Nhân viên 06** | 🧪 Kiểm Thử QA | Chạy Backend Unit Tests + Chrome DevTools. | **Codex soi kết quả kiểm thử:** Đảm bảo 100% test PASS, 0 lỗi đỏ JS console/network. |
+| **Nhân viên 07** | 🛡️ Bảo Mật & Tối Ưu | Review 5 chiều, quét 7 điểm bảo mật, dọn code rác. | **Codex soi an ninh:** Quét sạch bí mật, API key, loại bỏ dead code. |
+| **Nhân viên 08** | 🚀 Đóng Gói DevOps | Tạo launcher 1-click `run.bat`, commit Git Tiếng Việt. | **Codex chạy thử nghiệm (Trial Run):** Chạy thực tế xem app mở mượt mà không lỗi. |
 
 ---
 
-## III. QUY TRÌNH VẬN HÀNH 5 BƯỚC KHÉP KÍN (DIRECTOR & CODEX LIFECYCLE)
+## III. QUY TRÌNH VẬN HÀNH 5 BƯỚC: CODEX GIÁM SÁT TỪNG BƯỚC
 
 ### Bước 1: Giám Đốc Tiếp Nhận Ý Tưởng & Phản Biện Cốt Lõi
-- Tiếp nhận bài toán thô từ Sếp (Người Dùng).
-- Phỏng vấn đúng 3 câu: Mục tiêu, Nền tảng, Quy mô.
-- Phân định rạch ròi:
-  + **CẦN LÀM:** 3 – 5 tính năng MVP cốt lõi, giải quyết triệt để nỗi đau người dùng.
-  + **KHÔNG CẦN LÀM:** Gạt bỏ tính năng rườm rà, rủi ro đơ máy, tiết kiệm tối đa token LLM.
-- Trình 2 Phương Án cho Sếp chọn. Sếp chốt ➔ Giám Đốc ra Chỉ Thị Tác Chiến.
+- Tiếp nhận bài toán thô từ Sếp (Người Dùng). Phỏng vấn gọn 3 câu.
+- Phân định dứt khoát: **CẦN LÀM** (3-5 tính năng MVP) vs **KHÔNG CẦN LÀM** (gạt bỏ tính năng rườm rà, tiết kiệm token).
+- Sếp duyệt phương án ➔ Giám Đốc ra Chỉ Thị Tác Chiến cho 7 nhân viên.
 
-### Bước 2: 7 Nhân Viên Hoạt Động Riêng Lẻ — Mỗi Người 1 Nhiệm Vụ
-- Mỗi nhân viên chỉ tập trung 100% vào đúng chuyên môn của mình, không làm chồng chéo:
-  + Nhân viên 02 vẽ kiến trúc ➔ Nhân viên 03 lập kế hoạch ➔ Nhân viên 04 code backend & Nhân viên 05 làm giao diện ➔ Nhân viên 06 kiểm thử ➔ Nhân viên 07 rà soát bảo mật ➔ Nhân viên 08 đóng gói.
+### Bước 2: 7 Nhân Viên Làm Việc Riêng Lẻ Dưới Sự Giám Sát Của Codex
+- Mỗi nhân viên chỉ làm đúng 1 chuyên môn của mình.
+- **CODEX ĐỨNG CẠNH BÊN GIÁM SÁT TỪNG BƯỚC:**
+  + Nhân viên nào làm xong việc của mình ➔ Codex soi xét ngay tại nguồn.
+  + Nếu có lỗi hoặc chưa tối ưu ➔ Codex huýt còi, Giám Đốc lệnh nhân viên đó sửa ngay lập tức (Auto-Fix Loop).
 
-### Bước 3: Cơ Chế Báo Cáo Ngược & Giám Đốc Kiểm Soát Tiến Độ
-- **Sau mỗi lần hoàn thành 1 việc, nhân viên BẮT BUỘC báo cáo ngay về cho Giám Đốc.**
-- Giám Đốc kiểm tra nghiêm ngặt qua 7 Cổng Chất Lượng (Quality Gates).
-- Nếu phát hiện bất kỳ sai sót nào ➔ Giám Đốc lệnh cho nhân viên đó khắc phục lỗi ngay tại chỗ (Auto-Fix Loop) trước khi chuyển việc tiếp theo.
+### Bước 3: Báo Cáo Ngược Kép: Nhân Viên Báo Cáo + Codex Xác Nhận
+- Sau khi hoàn thành và được Codex kiểm tra đạt chuẩn, nhân viên nộp báo cáo ngược về Giám Đốc kèm xác nhận của Codex.
+- Giám Đốc kiểm tra đối chiếu cổng Quality Gate, phê duyệt chuyển giao việc tiếp theo.
 
-### Bước 4: Hợp Nhất Dự Án & Chuyển Qua Codex Thử Nghiệm, Nhận Xét
-- Khi cả 7 nhân viên đã hoàn thành công việc, Giám Đốc **gộp tất cả lại thành 1 dự án hoàn chỉnh**.
-- Giám Đốc lập tức chuyển toàn bộ dự án sang **CODEX** để thẩm định độc lập:
-  + **Chạy thử nghiệm thực tế (Trial Run):** Khởi chạy server/launcher, gọi API, thao tác giao diện để kiểm tra độ ổn định thực tế.
-  + **Phân tích & Nhận xét chuyên sâu:** Đánh giá độ sạch của code, tính tối ưu tài nguyên, độ ăn khớp giữa 7 nhân viên, bẫy lỗi biên (Edge Cases).
-  + **Xuất báo cáo:** Lập file `docs/CODEX_AUDIT_REPORT.md` với đầy đủ ưu điểm, nhược điểm và kết luận thẩm định.
-  + *Nếu Codex phát hiện lỗi:* Giám Đốc lập tức điều động nhân viên liên quan sửa lại cho đến khi Codex chấm đạt 100%.
+### Bước 4: Giám Đốc Hợp Nhất Dự Án & Codex Tổng Hợp Đánh Giá
+- Giám Đốc gộp tất cả công việc của 7 nhân viên thành 1 dự án hoàn chỉnh.
+- Codex tiến hành chạy thử nghiệm toàn luồng thực tế (Trial Run) và xuất bản báo cáo chính thức: [`docs/CODEX_AUDIT_REPORT.md`](docs/CODEX_AUDIT_REPORT.md) ghi nhận nhận xét chi tiết cho từng nhân viên.
 
-### Bước 5: Trình Sếp Duyệt Kèm Báo Cáo Codex (Executive Hard Stop)
-- Giám Đốc mang **Dự án Hoàn Chỉnh + Báo Cáo Thẩm Định Của Codex** lên trình diện Sếp.
+### Bước 5: Trình Sếp Duyệt (Executive Approval Gate - Hard Stop)
+- Giám Đốc mang **Dự án Hoàn Chỉnh + Báo Cáo Giám Sát Của Codex** lên trình diện Sếp.
 - **ĐIỀU KIỆN TIÊN QUYẾT:** Bao giờ **Sếp nói "OK / Duyệt"** thì dự án mới chính thức được phê duyệt xuất xưởng!
-- Nếu Sếp chưa đồng ý hoặc yêu cầu chỉnh sửa: Giám Đốc lập tức đối chiếu sơ đồ, phân việc khắc phục triệt để lỗi đến khi Sếp hoàn toàn hài lòng.
+- Nếu Sếp chưa ưng ý: Giám Đốc lập tức đối chiếu sơ đồ, cùng Codex chỉ đạo đúng nhân viên khắc phục triệt để lỗi đến khi Sếp hoàn toàn hài lòng.
+
 
 
 ---

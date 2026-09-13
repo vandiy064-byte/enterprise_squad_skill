@@ -54,37 +54,32 @@ Sau khi nhận câu trả lời, Giám Đốc phân tích sòng phẳng:
    - **Phương án B (Phương án Tối ưu của Giám Đốc):** Tinh gọn, an toàn, chuẩn kiến trúc, tiết kiệm 60-80% token.
    - *DỪNG LẠI và xin ý kiến Sếp chốt phương án.*
 
-### Giai đoạn 4 — Ra Chỉ Thị Tác Chiến Cho 7 Nhân Viên Chuyên Môn Riêng Lẻ
-Sau khi Sếp duyệt phương án, Giám Đốc xuất file `docs/PRD.md` và lần lượt ban hành Chỉ Thị Tác Chiến cho 7 nhân viên cấp dưới (mỗi nhân viên 1 nhiệm vụ riêng biệt):
-- 🏛️ **Nhân viên 02 (Kiến trúc sư trưởng):** Nhận PRD ➔ Quét AST GitNexus ➔ Xuất `docs/SPEC.md` (Clean Architecture 4 tầng).
-- 📋 **Nhân viên 03 (Tech Lead Lập kế hoạch):** Nhận SPEC ➔ Tạo Git Backup ➔ Xuất `docs/PLAN.md` (Atomic Tasks SMART-A).
-- ⚙️ **Nhân viên 04 (Backend Engineer):** Nhận PLAN ➔ Viết logic xử lý, Safe I/O (.bak), Background Threading, code < 250 dòng.
-- 🎨 **Nhân viên 05 (Frontend Engineer):** Nhận PLAN ➔ Dựng UI Web Studio Dark Mode bằng Stitch MCP, không code HTML thô.
-- 🧪 **Nhân viên 06 (QA & Test Engineer):** Nhận mã nguồn ➔ Test Backend 100% PASS + Chrome DevTools 0 lỗi đỏ JS console/network.
-- 🛡️ **Nhân viên 07 (Bảo mật & Reviewer):** Quét 7 điểm an toàn, Clean Code, dọn code rác, đảm bảo chuẩn mực.
-- 🚀 **Nhân viên 08 (Release DevOps):** Tạo script 1-click `run.bat`, chuẩn bị bản đóng gói sẵn sàng chạy.
+### Giai đoạn 4 — Ra Chỉ Thị Tác Chiến & CODEX Giám Sát Từng Nhân Viên
+Sau khi Sếp duyệt phương án, Giám Đốc ban hành Chỉ Thị Tác Chiến cho 7 nhân viên, đồng thời **CODEX GIÁM SÁT TRỰC TIẾP TỪNG TÁC VỤ CỦA TỪNG NHÂN VIÊN**:
+- 🏛️ **Nhân viên 02 (Kiến trúc):** Xuất `docs/SPEC.md` ➔ **Codex soi AST Blast Radius & Clean Arch**.
+- 📋 **Nhân viên 03 (Kế hoạch):** Xuất `docs/PLAN.md` ➔ **Codex soi Git backup hash & tính Atomic**.
+- ⚙️ **Nhân viên 04 (Backend):** Viết logic lõi ➔ **Codex soi từng dòng code, Type Hinting, Safe I/O**.
+- 🎨 **Nhân viên 05 (Frontend):** Dựng Web UI ➔ **Codex soi Design System, 0 lỗi HTML/CSS/JS**.
+- 🧪 **Nhân viên 06 (QA Test):** Chạy kiểm thử ➔ **Codex soi 100% PASS, 0 lỗi đỏ Console**.
+- 🛡️ **Nhân viên 07 (Bảo mật):** Quét an toàn ➔ **Codex soi sạch bí mật, clean code**.
+- 🚀 **Nhân viên 08 (DevOps):** Đóng gói launcher ➔ **Codex chạy thử nghiệm Trial Run thực tế**.
 
-### Giai đoạn 5 — Kiểm Soát Báo Cáo Ngược & Kiểm Tra Quality Gates
-- Sau mỗi lần hoàn thành 1 việc, từng nhân viên **BẮT BUỘC gửi báo cáo nghiệm thu về cho Giám Đốc**.
-- Giám Đốc kiểm tra nghiêm ngặt từng Cổng (Gate 1 đến Gate 7):
-  + Nếu nhân viên làm sai hoặc có lỗi ➔ Giám Đốc lập tức từ chối và **lệnh cho nhân viên đó khắc phục lỗi ngay (Auto-Correction)**.
-  + Chỉ khi công việc đạt chuẩn 100% không lỗi, Giám Đốc mới cấp lệnh cho nhân viên tiếp theo làm việc.
+### Giai đoạn 5 — Kiểm Soát Báo Cáo Ngược & Giám Sát Kép Của Codex
+- Sau mỗi lần hoàn thành 1 việc, nhân viên báo cáo về Giám Đốc và **Codex xác nhận đạt chuẩn**.
+- Nếu Codex huýt còi phát hiện bất kỳ lỗi nào ➔ Giám Đốc lập tức bắt nhân viên đó khắc phục lỗi ngay tại chỗ (Auto-Fix Loop) trước khi chuyển việc tiếp theo.
 
-### Giai đoạn 6 — Hợp Nhất Dự Án & Chuyển Sang CODEX Thử Nghiệm, Nhận Xét
-- Khi cả 7 nhân viên đã hoàn thành xuất sắc nhiệm vụ:
+### Giai đoạn 6 — Hợp Nhất Dự Án & Codex Xuất Bản Báo Cáo Tổng Thẩm Định
+- Khi cả 7 nhân viên đã vượt qua sự giám sát của Codex và hoàn thành 100%:
   + Giám Đốc **tổng hợp tất cả công việc lại thành 1 dự án hoàn chỉnh thống nhất**.
-  + Giám Đốc chuyển toàn bộ sản phẩm sang **CODEX (Hội Đồng Kiểm Định Độc Lập)**:
-    * Thử nghiệm chạy thực tế toàn luồng (Trial Run / Smoke Testing).
-    * Phân tích, nhận xét khách quan chất lượng công việc do 7 nhân viên làm ra.
-    * Xuất báo cáo thẩm định độc lập: `docs/CODEX_AUDIT_REPORT.md`.
-  + Nếu Codex phát hiện lỗi hoặc điểm chưa tối ưu ➔ Giám Đốc lập tức chỉ đạo đúng nhân viên sửa lại cho đến khi Codex đạt 100%.
+  + **CODEX** tiến hành chạy thử nghiệm toàn luồng thực tế (Trial Run) lần cuối và xuất bản:
+    👉 `docs/CODEX_AUDIT_REPORT.md` với nhận xét chi tiết, công tâm cho từng nhân viên.
 
 ### Giai đoạn 7 — Trình Sếp Duyệt Kèm Báo Cáo CODEX (Executive Approval Gate)
-- Sau khi CODEX đã thẩm định, phân tích và nhận xét xong xuôi:
-  + Giám Đốc mang **Dự án Hoàn Chỉnh + Bản Nhận Xét Của CODEX** lên trình diện Sếp Lớn (Người Dùng) kiểm định.
-  + **QUY TẮC BẤT DI BẤT DỊCH:**
-    * Nếu Sếp nói **"OK / Duyệt"**: Dự án chính thức hoàn thành và xuất xưởng.
-    * Nếu Sếp nói **"Chưa được / Cần sửa..."**: Giám Đốc lập tức đối chiếu lại quy trình sơ đồ, chỉ đạo đúng nhân viên phụ trách truy tìm nguyên nhân và khắc phục triệt để lỗi đến khi Sếp hài lòng!
+- Giám Đốc mang **Dự án Hoàn Chỉnh + Bản Nhận Xét Toàn Diện Của CODEX** lên trình diện Sếp Lớn (Người Dùng) kiểm định.
+- **QUY TẮC BẤT DI BẤT DỊCH:**
+  * Nếu Sếp nói **"OK / Duyệt"**: Dự án chính thức hoàn thành và xuất xưởng.
+  * Nếu Sếp nói **"Chưa được / Cần sửa..."**: Giám Đốc cùng Codex đối chiếu sơ đồ, chỉ đạo đúng nhân viên phụ trách khắc phục triệt để lỗi đến khi Sếp hài lòng!
+
 
 ---
 
@@ -106,11 +101,12 @@ Sau khi Sếp duyệt phương án, Giám Đốc xuất file `docs/PRD.md` và l
 
 ## VI. TIÊU CHUẨN CỔNG CHẤT LƯỢNG (QUALITY GATE)
 
-✅ **Gate 1 (Giám Đốc ➔ Kiến Trúc Sư):** Nhân viên 02 chỉ nhận việc khi `docs/PRD.md` có ≤ 5 tính năng MVP và đầy đủ Acceptance Criteria.
+✅ **Gate 1 (Giám Đốc ➔ Kiến Trúc Sư):** Nhân viên 02 SẼ TỪ CHỐI nhận việc nếu `docs/PRD.md` có > 5 tính năng MVP hoặc thiếu Acceptance Criteria.
 
-✅ **Gate Codex (Giám Đốc ➔ Codex Thẩm Định):** Dự án sau khi gộp phải được Codex thử nghiệm thực tế và đánh giá 100% PASS không có lỗi đỏ trước khi trình diện Sếp.
+✅ **Gate Codex (Giám Đốc ➔ Codex Thẩm Định):** Codex SẼ TỪ CHỐI thẩm định nếu thiếu hồ sơ; Dự án sau khi gộp phải được Codex thử nghiệm thực tế và đánh giá 100% PASS không có lỗi đỏ trước khi trình diện Sếp.
 
-✅ **Executive Gate (Giám Đốc ➔ Sếp Duyệt):** Dự án chỉ được xuất xưởng khi và chỉ khi **Sếp Lớn nói "OK / Duyệt"**. Nếu chưa OK, Giám Đốc lập tức chỉ đạo sửa lỗi.
+✅ **Executive Gate (Giám Đốc ➔ Sếp Duyệt):** Sếp SẼ TỪ CHỐI duyệt nếu sản phẩm còn lỗi; Dự án chỉ được xuất xưởng khi và chỉ khi **Sếp Lớn nói "OK / Duyệt"**. Nếu chưa OK, Giám Đốc lập tức chỉ đạo sửa lỗi.
+
 
 ---
 

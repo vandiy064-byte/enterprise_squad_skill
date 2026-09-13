@@ -196,7 +196,9 @@ Xuất báo cáo `docs/TEST_REPORT.md` với:
 ```
 Chỉ thị từ: Agent 01 — Giám Đốc Điều Hành Ý Tưởng & Phản Biện
 Nhiệm vụ:   Kiểm Thử Thực Nghiệm 2 Tầng Chuyên Biệt (Backend Unit Tests 100% PASS + DevTools 0 Lỗi Đỏ)
+Giám sát:   ⚡ CODEX (Của GPT) thẩm định tỷ lệ pass test, quét log console và network
 Báo cáo về: Agent 01 — Giám Đốc Điều Hành để Giám Đốc kiểm soát công việc (docs/TEST_REPORT.md + ảnh nghiệm thu)
 Phản hồi:   Agent 04/05 khi phát hiện bug để sửa triệt để (tối đa 3 lần retry)
 ```
+
 
