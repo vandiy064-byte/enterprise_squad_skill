@@ -41,30 +41,30 @@ AUTO SQUAD: Làm tool rename hàng loạt file ảnh theo chuẩn YYYYMMDD_HHmms
 
 ---
 
-## 📋 PIPELINE ĐỘI NGŨ (8 AGENT → 7 GATE)
+## 📋 SƠ ĐỒ ĐIỀU PHỐI: GIÁM ĐỐC CHỈ HUY & SẾP PHÊ DUYỆT (HARD STOP)
 
 ```
-👤 Bạn
-  │
-  ▼ [Agent 01 🎯] PM — Phỏng vấn → Đóng băng MVP → PRD.md
-  │ ✅ Gate 1
-  ▼ [Agent 02 🏛️] Architect — Kiến trúc → Blast Radius → SPEC.md
-  │ ✅ Gate 2
-  ▼ [Agent 03 📋] Tech Lead — Chia task → Git backup → PLAN.md
-  │ ✅ Gate 3
-  ├──────────────────────────┐
-  ▼ [Agent 04 ⚙️] Backend   ▼ [Agent 05 🎨] Frontend
-  │ ✅ Gate 4a               │ ✅ Gate 4b
-  └──────────┬───────────────┘
-             ▼ [Agent 06 🧪] QA — Unit Test 100% + DevTools 0 lỗi
-             │ ✅ Gate 5
-             ▼ [Agent 07 🛡️] Reviewer — Review 5 chiều + Security Scan
-             │ ✅ Gate 6
-             ▼ [Agent 08 🚀] DevOps — Launcher + Git + Docs
-             │ ✅ Gate 7
-             ▼
-          🎉 Sản phẩm hoàn chỉnh bàn giao cho bạn!
+👑 Sếp Lớn (Bạn) ──(Ý tưởng)──► [Agent 01 🎯] Giám Đốc Ý Tưởng & Phản Biện
+                                    │ (Phản biện CẦN LÀM vs KHÔNG CẦN LÀM, đóng băng MVP)
+                                    ▼ (Ban hành Chỉ thị tác chiến cho 7 nhân viên riêng lẻ)
+  ┌─────────────────────────────────┴────────────────────────────────┐
+  ▼ [Nhân viên 02 🏛️] Kiến trúc    ──► (Báo cáo ngược về Giám Đốc)
+  ▼ [Nhân viên 03 📋] Kế hoạch     ──► (Báo cáo ngược về Giám Đốc)
+  ▼ [Nhân viên 04 ⚙️] Backend      ──► (Báo cáo ngược về Giám Đốc)
+  ▼ [Nhân viên 05 🎨] Frontend     ──► (Báo cáo ngược về Giám Đốc)
+  ▼ [Nhân viên 06 🧪] QA Test      ──► (Báo cáo ngược về Giám Đốc)
+  ▼ [Nhân viên 07 🛡️] Bảo mật      ──► (Báo cáo ngược về Giám Đốc)
+  ▼ [Nhân viên 08 🚀] DevOps       ──► (Báo cáo ngược về Giám Đốc)
+  └─────────────────────────────────┬────────────────────────────────┘
+                                    ▼
+       🎯 Giám Đốc gộp tất cả thành 1 dự án hoàn chỉnh
+                                    │
+                                    ▼
+       👑 TRÌNH SẾP KIỂM ĐỊNH (Bao giờ Sếp nói "OK" mới duyệt!)
+          ├── Sếp nói "OK" ──► 🎉 BÀN GIAO XUẤT XƯỞNG!
+          └── Sếp chưa OK ──► 🔍 Giám Đốc chỉ đạo khắc phục triệt để lỗi
 ```
+
 
 ---
 

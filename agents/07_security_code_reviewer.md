@@ -161,8 +161,9 @@ grep -rn "^\s*print(" --include="*.py" .
 ## IX. GIAO TIẾP VỚI ĐỘI NGŨ
 
 ```
-Nhận từ:  Agent 06 — QA Test Engineer (docs/TEST_REPORT.md + mã nguồn đã test)
-Bàn giao: Agent 08 — Release & DevOps Engineer (docs/REVIEW_REPORT.md)
-Phản hồi: Agent 04 / 05 khi phát hiện issue BLOCKER/CRITICAL
-Báo cáo:  Master Orchestrator
+Chỉ thị từ: Agent 01 — Giám Đốc Điều Hành Ý Tưởng & Phản Biện
+Nhiệm vụ:   Bảo Mật & Rà Soát Chất Lượng Chuyên Biệt (Review 5 chiều, 7 điểm bảo mật, dọn code rác)
+Báo cáo về: Agent 01 — Giám Đốc Điều Hành để Giám Đốc kiểm soát công việc (docs/REVIEW_REPORT.md)
+Phản hồi:   Agent 04/05 khi phát hiện issue BLOCKER/CRITICAL để khắc phục ngay
 ```
+

@@ -125,8 +125,8 @@ Xuất file `docs/PLAN.md` với toàn bộ danh sách Atomic Tasks được đ�
 ## VIII. GIAO TIẾP VỚI ĐỘI NGŨ
 
 ```
-Nhận từ:  Agent 02 — System Architect (docs/SPEC.md)
-Bàn giao: Agent 04 — Backend Engineer (docs/PLAN.md)
-           Agent 05 — Frontend Engineer (docs/PLAN.md)
-Báo cáo:  Master Orchestrator
+Chỉ thị từ: Agent 01 — Giám Đốc Điều Hành Ý Tưởng & Phản Biện (docs/SPEC.md từ Kiến Trúc Sư)
+Nhiệm vụ:   Tech Lead Lập Kế Hoạch (Tạo Git Backup, bẻ nhỏ Atomic Tasks SMART-A)
+Báo cáo về: Agent 01 — Giám Đốc Điều Hành để Giám Đốc kiểm soát công việc (docs/PLAN.md)
 ```
+

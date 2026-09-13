@@ -24,83 +24,82 @@
 
 ## 1. TỔNG QUAN ĐỘI NGŨ
 
-Đội ngũ gồm **8 Agent Chuyên Biệt Độc Lập**, mỗi Agent chỉ làm đúng 1 nhiệm vụ
-và có quyền **TỪ CHỐI** nhận bàn giao nếu đầu vào không đạt tiêu chuẩn.
+Đội ngũ vận hành theo **Mô Hình Quản Trị Trung Tâm: 1 Giám Đốc Điều Hành & 7 Nhân Viên Chuyên Trách Riêng Lẻ**.
+Mỗi nhân viên chỉ làm đúng 1 chức năng chuyên sâu, sau khi làm xong bắt buộc báo cáo ngược về Giám Đốc.
+Giám Đốc gộp toàn bộ dự án và chỉ khi **Sếp Lớn (Người Dùng) nói "OK"** thì dự án mới được nghiệm thu xuất xưởng.
 
-| Vị Trí | Agent | File Hồ Sơ | Giai Đoạn |
+| Vị Trí | Nhân Sự / Vai Trò | File Hồ Sơ | Chức Năng Chuyên Trách |
 |:---:|---|---|---|
-| #1 | 🎯 Product Manager & Idea Critic | [`agents/01_product_manager.md`](../agents/01_product_manager.md) | Khảo sát & Định hình |
-| #2 | 🏛️ Lead System Architect | [`agents/02_system_architect.md`](../agents/02_system_architect.md) | Thiết kế Kiến trúc |
-| #3 | 📋 Tech Lead & Task Planner | [`agents/03_tech_lead_planner.md`](../agents/03_tech_lead_planner.md) | Lập kế hoạch |
-| #4 | ⚙️ Core Backend Engineer | [`agents/04_backend_engineer.md`](../agents/04_backend_engineer.md) | Triển khai Backend |
-| #5 | 🎨 Frontend Studio Engineer | [`agents/05_frontend_engineer.md`](../agents/05_frontend_engineer.md) | Triển khai Frontend |
-| #6 | 🧪 QA & Verification Engineer | [`agents/06_qa_test_engineer.md`](../agents/06_qa_test_engineer.md) | Kiểm thử & Nghiệm thu |
-| #7 | 🛡️ Staff Code Reviewer & Security | [`agents/07_security_code_reviewer.md`](../agents/07_security_code_reviewer.md) | Review & Audit |
-| #8 | 🚀 Release & DevOps Engineer | [`agents/08_release_devops_engineer.md`](../agents/08_release_devops_engineer.md) | Xuất xưởng & Bàn giao |
+| **#1** | **🎯 Managing Director & Idea Critic** | [`agents/01_product_manager.md`](../agents/01_product_manager.md) | **Giám Đốc Điều Hành:** Phản biện CẦN LÀM vs KHÔNG CẦN LÀM, ra chỉ thị 7 nhân viên, gộp dự án, trình Sếp duyệt. |
+| **#2** | **🏛️ Lead System Architect** | [`agents/02_system_architect.md`](../agents/02_system_architect.md) | **Nhân viên Kiến trúc:** Quét GitNexus AST, thiết kế Clean Architecture 4 tầng. |
+| **#3** | **📋 Tech Lead & Task Planner** | [`agents/03_tech_lead_planner.md`](../agents/03_tech_lead_planner.md) | **Nhân viên Kế hoạch:** Tạo Git Backup, bẻ nhỏ Atomic Tasks SMART-A. |
+| **#4** | **⚙️ Core Backend Engineer** | [`agents/04_backend_engineer.md`](../agents/04_backend_engineer.md) | **Nhân viên Backend:** Triển khai logic cốt lõi, đa luồng, an toàn file (.bak), code < 250 dòng. |
+| **#5** | **🎨 Frontend Studio Engineer** | [`agents/05_frontend_engineer.md`](../agents/05_frontend_engineer.md) | **Nhân viên Frontend:** Dựng giao diện Studio Dark Mode, Stitch MCP, chống tự gõ HTML thô. |
+| **#6** | **🧪 QA & Verification Engineer** | [`agents/06_qa_test_engineer.md`](../agents/06_qa_test_engineer.md) | **Nhân viên Kiểm thử:** Backend Unit Tests 100% PASS + Chrome DevTools 0 lỗi đỏ. |
+| **#7** | **🛡️ Staff Code Reviewer & Security** | [`agents/07_security_code_reviewer.md`](../agents/07_security_code_reviewer.md) | **Nhân viên Bảo mật:** Review 5 chiều, quét 7 điểm an toàn bảo mật, dọn code rác. |
+| **#8** | **🚀 Release & DevOps Engineer** | [`agents/08_release_devops_engineer.md`](../agents/08_release_devops_engineer.md) | **Nhân viên DevOps:** Đóng gói launcher 1-click `run.bat`, commit Git chuẩn Tiếng Việt. |
 
 ---
 
-## 2. SƠ ĐỒ PIPELINE TOÀN LUỒNG
+## 2. SƠ ĐỒ PIPELINE TOÀN LUỒNG: GIÁM ĐỐC CHỈ HUY & SẾP DUYỆT
 
 ```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                    ENTERPRISE SQUAD — FULL PIPELINE                         │
-└─────────────────────────────────────────────────────────────────────────────┘
-
-  👤 Người Dùng
-       │ (Ý tưởng thô)
+  👑 SẾP LỚN (NGƯỜI DÙNG)
+       │ (Giao ý tưởng bài toán)
        ▼
-  ┌──────────────────────────────────┐
-  │  Agent 01: Product Manager       │──────► docs/PRD.md
-  │  (Phỏng vấn → Đóng băng MVP)    │
-  └──────────────────────────────────┘
-       │ ✅ GATE 1: PRD.md có ≤5 tính năng, đầy đủ AC?
-       ▼
-  ┌──────────────────────────────────┐
-  │  Agent 02: System Architect      │──────► docs/SPEC.md
-  │  (GitNexus AST → Clean Arch)     │
-  └──────────────────────────────────┘
-       │ ✅ GATE 2: SPEC.md có Blast Radius Map, Data Contracts?
-       ▼
-  ┌──────────────────────────────────┐
-  │  Agent 03: Tech Lead Planner     │──────► docs/PLAN.md
-  │  (Git Backup → Atomic Tasks)     │
-  └──────────────────────────────────┘
-       │ ✅ GATE 3: PLAN.md có Git hash, test case cho mỗi task?
-       ├─────────────────────┐
-       ▼                     ▼
-  ┌────────────────┐   ┌────────────────┐
-  │  Agent 04:     │   │  Agent 05:     │
-  │  Backend       │   │  Frontend      │
-  │  Engineer      │   │  Engineer      │
-  │  (entities/    │   │  (web/ / ui/)  │
-  │   services/    │   │  Stitch MCP    │
-  │   utils/)      │   │                │
-  └────────────────┘   └────────────────┘
-       │ ✅ GATE 4 Backend: Type Hints, no TODO, smoke test OK?
-       │ ✅ GATE 4 Frontend: id attributes, Design System, no JS error?
-       └─────────────────────┐
-                             ▼
-  ┌──────────────────────────────────┐
-  │  Agent 06: QA Test Engineer      │──────► docs/TEST_REPORT.md
-  │  (Unit Test 100% + DevTools 0err)│        docs/screenshots/
-  └──────────────────────────────────┘
-       │ ✅ GATE 5: 100% PASS, 0 Console error, 0 Network error?
-       ▼
-  ┌──────────────────────────────────┐
-  │  Agent 07: Security Reviewer     │──────► docs/REVIEW_REPORT.md
-  │  (5-Dim Review + Security Scan)  │
-  └──────────────────────────────────┘
-       │ ✅ GATE 6: REVIEW_REPORT.md có trạng thái APPROVED?
-       ▼
-  ┌──────────────────────────────────┐
-  │  Agent 08: Release & DevOps      │──────► run.bat / run_web.bat
-  │  (Launcher + Git + PROGRESS.md)  │        PROGRESS.md
-  └──────────────────────────────────┘
-       │ ✅ GATE 7: Launcher chạy OK, .env không bị commit?
-       ▼
-  👤 Người Dùng nhận Sản Phẩm Hoàn Chỉnh 🎉
+  ┌─────────────────────────────────────────────────────────────┐
+  │  🎯 AGENT 01: GIÁM ĐỐC ĐIỀU HÀNH Ý TƯỞNG & PHẢN BIỆN        │
+  │  • Phỏng vấn 3 câu ➔ Phản biện: CẦN LÀM vs KHÔNG CẦN LÀM    │
+  │  • Đóng băng MVP (3-5 tính năng) ➔ Xuất docs/PRD.md         │
+  └─────────────────────────────────────────────────────────────┘
+       │ Ban hành Chỉ thị Tác chiến
+       ├────────────────────────┬────────────────────────┐
+       ▼                        ▼                        ▼
+  ┌──────────────────┐    ┌──────────────────┐    ┌──────────────────┐
+  │ Nhân viên 02     │    │ Nhân viên 03     │    │ Nhân viên 04 & 05│
+  │ 🏛️ Architect     │    │ 📋 Planner       │    │ ⚙️ BE & 🎨 FE    │
+  │ (Clean Arch)     │    │ (Atomic Tasks)   │    │ (Code < 250 dòng)│
+  └──────────────────┘    └──────────────────┘    └──────────────────┘
+       │ Báo cáo ngược         │ Báo cáo ngược         │ Báo cáo ngược
+       ├────────────────────────┼────────────────────────┤
+       ▼                        ▼                        ▼
+  ┌──────────────────┐    ┌──────────────────┐    ┌──────────────────┐
+  │ Nhân viên 06     │    │ Nhân viên 07     │    │ Nhân viên 08     │
+  │ 🧪 QA Test       │    │ 🛡️ Security      │    │ 🚀 DevOps        │
+  │ (100% PASS, 0 err)│   │ (Clean Code)     │    │ (Launcher 1-click)
+  └──────────────────┘    └──────────────────┘    └──────────────────┘
+       │ Báo cáo ngược         │ Báo cáo ngược         │ Báo cáo ngược
+       └────────────────────────┼────────────────────────┘
+                                ▼
+  ┌─────────────────────────────────────────────────────────────┐
+  │  🎯 GIÁM ĐỐC GỘP TOÀN BỘ DỰ ÁN HOÀN CHỈNH & KIỂM TRA TỔNG   │
+  └─────────────────────────────────────────────────────────────┘
+                                │
+                                ▼
+  👑 TRÌNH SẾP KIỂM ĐỊNH (EXECUTIVE APPROVAL GATE - HARD STOP)
+       │
+       ├───► Sếp nói "OK / DUYỆT" ───────► 🎉 XUẤT XƯỞNG BÀN GIAO!
+       │
+       └───► Sếp nói "CHƯA ĐƯỢC / CẦN SỬA" 
+                  │
+                  ▼
+             Giám Đốc truy vết sơ đồ quy trình, chỉ đạo đúng
+             nhân viên tìm và khắc phục triệt để lỗi đến khi Sếp OK!
 ```
+
+---
+
+## 2.1 CƠ CHẾ BÁO CÁO NGƯỢC & SẾP PHÊ DUYỆT TỐI CAO
+
+1. **Cơ Chế Báo Cáo Ngược (Upward Reporting):**
+   - Tuyệt đối không để nhân viên tự ý bàn giao chéo hoặc tự ý kết thúc mà không qua Giám Đốc.
+   - Mỗi khi 1 nhân viên làm xong 1 việc: Phải lập tức gửi báo cáo ngắn gọn (Checklist hoặc Bảng Markdown dưới 15 dòng) về cho Giám Đốc.
+   - Giám Đốc kiểm tra chất lượng tại cổng Quality Gate. Nếu có lỗi ➔ Giám Đốc lệnh sửa ngay tại chỗ (Auto-Fix Loop tối đa 3 lần).
+2. **Cổng Phê Duyệt Của Sếp (Executive Approval Gate):**
+   - Giám Đốc là người chịu trách nhiệm tổng hợp mã nguồn, giao diện, test và tài liệu thành 1 dự án thống nhất.
+   - Giám Đốc mang toàn bộ kết quả lên báo cáo Sếp.
+   - **Bao giờ Sếp nói "OK / Duyệt" thì mới được đóng task!**
+
 
 ---
 

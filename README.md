@@ -6,41 +6,43 @@
 [![Zero-Bug Policy](https://img.shields.io/badge/Policy-Zero--Bug-green.svg)](https://github.com)
 [![Token Optimized](https://img.shields.io/badge/Token%20Efficiency-60--80%25%20Saved-brightgreen.svg)](https://github.com)
 
-> **Hệ sinh thái Đội ngũ Multi-Agent 8 Vị trí Chuyên biệt Độc lập** điều phối quy trình phát triển phần mềm toàn diện từ ý tưởng thô đến bàn giao sản phẩm thương mại. Tích hợp sẵn **Giao Thức Tối Ưu Hóa Token (TOP)** tiết kiệm chi phí và tăng tốc phản hồi.
+> **Mô Hình Quản Trị Trung Tâm: 1 Giám Đốc Điều Hành Ý Tưởng & Phản Biện Chỉ Huy 7 Nhân Viên Chuyên Trách Riêng Lẻ**. Giám Đốc tiếp nhận ý tưởng từ Sếp (Người Dùng), phản biện **CẦN LÀM** vs **KHÔNG CẦN LÀM**, ra chỉ thị phân việc riêng cho từng nhân viên, kiểm soát toàn bộ báo cáo ngược, gộp dự án và trình Sếp kiểm định. **Chỉ khi Sếp nói "OK / Duyệt" thì dự án mới hoàn thành!**
 
 ---
 
 ## 🌟 Điểm Nổi Bật (Highlights)
 
+- 🎯 **1 Giám Đốc Điều Hành Ý Tưởng & Phản Biện:** Lọc sạch tính năng thừa, đóng băng MVP, chỉ đạo 7 nhân viên và chịu trách nhiệm toàn diện trước Sếp.
 - ⚡ **Tiết Kiệm 60% – 80% Token:** Ứng dụng Progressive Disclosure, Diff-Only, AST Search và Session Memory Snapshot.
-- 🎯 **8 Vị Trí Chuyên Gia Độc Lập:** Product Manager, Lead Architect, Tech Lead Planner, Core Backend, Studio Frontend, QA Tester, Security Reviewer, Release DevOps.
+- 👥 **7 Nhân Viên Chuyên Môn Độc Lập:** Mỗi người 1 nhiệm vụ chuyên biệt (Kiến trúc, Kế hoạch, Backend, Frontend, QA, Bảo mật, DevOps), sau mỗi việc đều báo cáo ngược về Giám Đốc.
+- 👑 **Cổng Phê Duyệt Của Sếp (Executive Approval Gate):** Toàn bộ sản phẩm được gộp hoàn chỉnh, trình diện Sếp; bao giờ Sếp nói "OK" mới xuất xưởng, nếu chưa thì truy vết khắc phục lỗi.
 - 🛡️ **7 Cổng Chất Lượng Bắt Buộc (Quality Gates):** Ngăn chặn 100% rủi ro đứt gãy luồng, hallucination và code lỗi.
 - 📐 **Clean Architecture 4 Tầng:** Phân tách bạch lạc giữa Entities, Services, UI và Safe Utils.
 - 🧪 **Kiểm Thử Thực Nghiệm 2 Tầng:** Backend Unit Tests đạt 100% PASS kết hợp Chrome DevTools quét sạch 0 lỗi đỏ JS console/network.
-- 🚀 **Cài Đặt 1-Click:** Tương thích trực tiếp với Google Antigravity IDE, Claude Code và các AI Coding Agents.
 
 ---
 
-## 🔄 Sơ Đồ Quy Trình Điều Phối 8 Vị Trí
+## 🔄 Sơ Đồ Điều Phối: Giám Đốc Chỉ Huy & Sếp Duyệt
 
 ```mermaid
 flowchart TD
-    User["💡 Người Dùng (Ý tưởng)"] --> G1{"Gate 1"}
-    G1 --> A1["🎯 01. Product Manager\n(Phỏng vấn 3 câu, đóng băng MVP)"]
-    A1 --> G2{"Gate 2"}
-    G2 --> A2["🏛️ 02. Lead System Architect\n(GitNexus AST, Clean Architecture)"]
-    A2 --> G3{"Gate 3"}
-    G3 --> A3["📋 03. Tech Lead Planner\n(Git Backup, Atomic Tasks SMART-A)"]
-    A3 --> G4{"Gate 4"}
-    G4 --> A4["⚙️ 04. Core Backend Engineer\n(Type Hinting, Safe I/O, Threading)"]
-    G4 --> A5["🎨 05. Studio Frontend Engineer\n(Obsidian Dark, Stitch UI)"]
-    A4 & A5 --> G5{"Gate 5"}
-    G5 --> A6["🧪 06. QA & Test Engineer\n(100% Tests PASS, DevTools 0 Lỗi)"]
-    A6 --> G6{"Gate 6"}
-    G6 --> A7["🛡️ 07. Security & Code Reviewer\n(Review 5 chiều, Scan 7 điểm)"]
-    A7 --> G7{"Gate 7"}
-    G7 --> A8["🚀 08. Release & DevOps\n(Launcher 1-click, Git Commit)"]
-    A8 --> Done["🎉 BÀN GIAO SẢN PHẨM HOÀN HẢO"]
+    Boss["👑 SẾP LỚN (NGƯỜI DÙNG)\n(Giao ý tưởng bài toán)"] --> Dir["🎯 AGENT 01: GIÁM ĐỐC Ý TƯỞNG & PHẢN BIỆN\n• Phản biện: CẦN LÀM vs KHÔNG CẦN LÀM\n• Đóng băng MVP 3-5 tính năng\n• Ban hành Chỉ thị tác chiến cho 7 nhân viên"]
+    
+    Dir -->|Chỉ thị 1| A2["🏛️ Nhân viên 02: Kiến trúc\n(GitNexus AST, Clean Architecture)"]
+    Dir -->|Chỉ thị 2| A3["📋 Nhân viên 03: Lập kế hoạch\n(Git Backup, Atomic Tasks SMART-A)"]
+    Dir -->|Chỉ thị 3| A4["⚙️ Nhân viên 04: Backend\n(Logic, Safe I/O, Threading < 250 dòng)"]
+    Dir -->|Chỉ thị 4| A5["🎨 Nhân viên 05: Frontend\n(Web Studio Obsidian Dark, Stitch UI)"]
+    Dir -->|Chỉ thị 5| A6["🧪 Nhân viên 06: QA Test\n(100% Tests PASS, DevTools 0 Lỗi Đỏ)"]
+    Dir -->|Chỉ thị 6| A7["🛡️ Nhân viên 07: Bảo mật\n(Review 5 chiều, Clean Code, Dọn rác)"]
+    Dir -->|Chỉ thị 7| A8["🚀 Nhân viên 08: DevOps\n(Launcher 1-click run.bat, Commit Git)"]
+    
+    A2 & A3 & A4 & A5 & A6 & A7 & A8 -->|Báo cáo ngược từng việc| Dir
+    
+    Dir -->|Gộp toàn bộ thành dự án hoàn chỉnh| GateBoss{"👑 SẾP KIỂM ĐỊNH\n(Executive Gate)"}
+    
+    GateBoss -- "Sếp nói 'OK / DUYỆT'" --> Release["🎉 XUẤT XƯỞNG BÀN GIAO HOÀN HẢO!"]
+    GateBoss -- "Sếp nói 'CHƯA ĐƯỢC / CẦN SỬA'" --> Fix["🔍 Giám Đốc truy vết sơ đồ, chỉ đạo\nđúng nhân viên sửa lỗi đến khi Sếp OK"]
+    Fix --> Dir
 ```
 
 ---

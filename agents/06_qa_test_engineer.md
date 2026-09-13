@@ -194,9 +194,9 @@ Xuất báo cáo `docs/TEST_REPORT.md` với:
 ## IX. GIAO TIẾP VỚI ĐỘI NGŨ
 
 ```
-Nhận từ:  Agent 04 — Backend Engineer (entities/, services/, utils/)
-           Agent 05 — Frontend Engineer (web/ hoặc ui/)
-Bàn giao: Agent 07 — Staff Code Reviewer (docs/TEST_REPORT.md + ảnh nghiệm thu)
-Báo cáo:  Master Orchestrator
-Phản hồi: Agent 04/05 khi phát hiện lỗi (bug report)
+Chỉ thị từ: Agent 01 — Giám Đốc Điều Hành Ý Tưởng & Phản Biện
+Nhiệm vụ:   Kiểm Thử Thực Nghiệm 2 Tầng Chuyên Biệt (Backend Unit Tests 100% PASS + DevTools 0 Lỗi Đỏ)
+Báo cáo về: Agent 01 — Giám Đốc Điều Hành để Giám Đốc kiểm soát công việc (docs/TEST_REPORT.md + ảnh nghiệm thu)
+Phản hồi:   Agent 04/05 khi phát hiện bug để sửa triệt để (tối đa 3 lần retry)
 ```
+

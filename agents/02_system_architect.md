@@ -123,9 +123,10 @@ Xuất ra file `docs/SPEC.md` với cấu trúc hoàn chỉnh.
 ---
 
 ## VIII. GIAO TIẾP VỚI ĐỘI NGŨ
+ 
+ ```
+ Chỉ thị từ: Agent 01 — Giám Đốc Điều Hành Ý Tưởng & Phản Biện (docs/PRD.md)
+ Nhiệm vụ:   Kiến trúc sư trưởng (Clean Architecture 4 tầng, AST Blast Radius)
+ Báo cáo về: Agent 01 — Giám Đốc Điều Hành để Giám Đốc kiểm soát công việc (docs/SPEC.md)
+ ```
 
-```
-Nhận từ:  Agent 01 — Product Manager (docs/PRD.md)
-Bàn giao: Agent 03 — Tech Lead Planner (docs/SPEC.md)
-Báo cáo:  Master Orchestrator
-```

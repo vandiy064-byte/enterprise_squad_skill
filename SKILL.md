@@ -6,56 +6,80 @@ description: >-
 
 # 🏢 Enterprise Multi-Agent Squad Skill (Dành Cho Dự Án Mới)
 
-Hệ thống kỹ năng điều phối **Đội ngũ Multi-Agent 8 Vị trí Chuyên biệt Độc lập** dành cho việc kiến tạo, phát triển và xuất xưởng ứng dụng thương mại hoàn chỉnh.
+Hệ thống kỹ năng điều phối **Mô Hình Quản Trị: 1 Giám Đốc Điều Hành Ý Tưởng & Phản Biện Chỉ Huy 7 Nhân Viên Chuyên Môn Riêng Lẻ** dành cho việc kiến tạo, phát triển và xuất xưởng ứng dụng thương mại hoàn chỉnh.
 
 ---
 
-## I. SƠ ĐỒ ĐIỀU PHỐI ĐỘI NGŨ 8 VỊ TRÍ
+## I. SƠ ĐỒ ĐIỀU PHỐI ĐỘI NGŨ: GIÁM ĐỐC CHỈ HUY & SẾP KIỂM ĐỊNH
 
 ```
-                   ┌────────────────────────────────────────────────────────┐
-                   │       ENTERPRISE MULTI-AGENT SQUAD LIFECYCLE           │
-                   └────────────────────────────────────────────────────────┘
-                                               │
-  [1. Ý TƯỞNG] ──> [Gate 1] ──> [Gate 2] ──> [Gate 3] ──> [Gate 4] ──> [Gate 5] ──> [Gate 6] ──> [Gate 7] ──> [XUẤT XƯỞNG]
-         │            │            │            │            │            │            │            │             │
-         ▼            ▼            ▼            ▼            ▼            ▼            ▼            ▼             ▼
-    [Người Dùng]   Agent 01     Agent 02     Agent 03     Agent 04     Agent 05     Agent 06     Agent 07      Agent 08
-                  (🎯 PM)    (🏛️ Architect) (📋 Planner)  (⚙️ Backend)  (🎨 Frontend) (🧪 QA)    (🛡️ Reviewer) (🚀 DevOps)
+                 👑 SẾP LỚN (NGƯỜI DÙNG)
+                 [Đưa Ý Tưởng] ───┐   ▲
+                                  │   │  (Bao giờ Sếp nói "OK" mới được duyệt!
+                                  ▼   │   Nếu chưa OK: Giám Đốc truy vết sơ đồ sửa lại)
+               ┌──────────────────────────────────────┐
+               │ 🎯 AGENT 01: GIÁM ĐỐC Ý TƯỞNG        │
+               │ • Phản biện: CẦN LÀM vs KHÔNG CẦN LÀM│
+               │ • Ban hành Chỉ thị cho 7 nhân viên   │
+               │ • Kiểm soát toàn bộ báo cáo ngược    │
+               │ • Gộp 7 phần thành dự án hoàn chỉnh  │
+               └──────────────────────────────────────┘
+                                  │  ▲ (Báo cáo ngược từng việc)
+       ┌───────────┬──────────────┼──────────────┬───────────┐
+       ▼           ▼              ▼              ▼           ▼
+  Nhân viên 02 Nhân viên 03  Nhân viên 04   Nhân viên 05 Nhân viên 06-08
+   (🏛️ Arch)   (📋 Plan)      (⚙️ Backend)   (🎨 Frontend) (🧪 QA - 🛡️ Sec - 🚀 DevOps)
+   [Chức năng: [Chức năng:    [Chức năng:    [Chức năng:   [Chức năng:
+    Kiến trúc]  Lập kế hoạch]  Logic & Data]  Giao diện UI] Kiểm thử, Bảo mật, Đóng gói]
 ```
 
 ---
 
-## II. BẢNG ĐIỀU PHỐI 8 AGENT CHUYÊN TRÁCH
+## II. BẢNG PHÂN CÔNG NHIỆM VỤ: 1 GIÁM ĐỐC & 7 NHÂN VIÊN RIÊNG LẺ
 
-| STT | Vị Trí Agent | Vai Trò & Trách Nhiệm Cốt Lõi | File Đặc Tả Vai Trò |
+| STT | Vị Trí | Nhiệm Vụ & Chức Năng Độc Lập | Quy Chế Báo Cáo Ngược Về Giám Đốc |
 |---|---|---|---|
-| **01** | **🎯 Product Manager & Idea Critic** | Phỏng vấn ngược 3 câu, phản biện ý tưởng, đóng băng phạm vi MVP (3-5 tính năng), xuất `docs/PRD.md`. | [`agents/01_product_manager.md`](file:///e:/app%20tools/agents/01_product_manager.md) |
-| **02** | **🏛️ Lead System Architect** | Quét GitNexus AST Blast Radius, thiết kế Clean Architecture 4 tầng, định nghĩa data model & API, xuất `docs/SPEC.md`. | [`agents/02_system_architect.md`](file:///e:/app%20tools/agents/02_system_architect.md) |
-| **03** | **📋 Tech Lead Planner** | Thiết lập điểm Git Backup an toàn, bẻ nhỏ công việc thành các Atomic Tasks (SMART-A), xuất `docs/PLAN.md`. | [`agents/03_tech_lead_planner.md`](file:///e:/app%20tools/agents/03_tech_lead_planner.md) |
-| **04** | **⚙️ Core Backend Engineer** | Lập trình logic cốt lõi, 100% Type Hinting, Threading ngầm chống đơ UI, Atomic File Write (.bak), giữ file < 250 dòng. | [`agents/04_backend_engineer.md`](file:///e:/app%20tools/agents/04_backend_engineer.md) |
-| **05** | **🎨 Studio Frontend Engineer** | Dựng giao diện Web Studio/GUI đẳng cấp phong cách Obsidian Dark Mode, sử dụng Stitch MCP, chống tự gõ HTML thô sơ. | [`agents/05_frontend_engineer.md`](file:///e:/app%20tools/agents/05_frontend_engineer.md) |
-| **06** | **🧪 QA & Test Engineer** | Nghiệm thu thực nghiệm 2 tầng: Unit Tests Backend 100% PASS + Chrome DevTools 0 lỗi đỏ JS console/network, chụp ảnh nghiệm thu. | [`agents/06_qa_test_engineer.md`](file:///e:/app%20tools/agents/06_qa_test_engineer.md) |
-| **07** | **🛡️ Security & Code Reviewer** | Review 5 chiều (Correctness, Readability, Architecture, Security, Performance), quét 7 điểm an toàn bảo mật, dọn code rác. | [`agents/07_security_code_reviewer.md`](file:///e:/app%20tools/agents/07_security_code_reviewer.md) |
-| **08** | **🚀 Release & DevOps Engineer** | Tạo script khởi động 1-click `run.bat`, commit Git chuẩn Conventional Commits Tiếng Việt, cập nhật `PROGRESS.md` và bàn giao. | [`agents/08_release_devops_engineer.md`](file:///e:/app%20tools/agents/08_release_devops_engineer.md) |
+| **01** | **🎯 Giám Đốc Ý Tưởng & Phản Biện** | Lãnh đạo tối cao. Tiếp nhận ý tưởng Sếp, phản biện **CẦN LÀM** vs **KHÔNG CẦN LÀM** (loại bỏ tính năng thừa, tiết kiệm token), ra chỉ thị cho 7 nhân viên, gộp sản phẩm và trình Sếp duyệt. | Trình diện Sếp Lớn (Người Dùng). Chờ Sếp duyệt "OK". |
+| **02** | **🏛️ Nhân Viên Kiến Trúc Sư Trưởng** | Quét GitNexus AST Blast Radius, thiết kế Clean Architecture 4 tầng, data model & API interfaces. | Nộp bản vẽ `docs/SPEC.md` về Giám Đốc nghiệm thu. |
+| **03** | **📋 Nhân Viên Tech Lead Kế Hoạch** | Tạo điểm Git Backup an toàn, bẻ nhỏ công việc thành các Atomic Tasks SMART-A độc lập. | Nộp kế hoạch `docs/PLAN.md` về Giám Đốc nghiệm thu. |
+| **04** | **⚙️ Nhân Viên Lập Trình Backend** | Viết code logic nghiệp vụ cốt lõi, 100% Type Hinting, Threading ngầm chống đơ UI, Atomic File Write (.bak), giữ file < 250 dòng. | Nộp mã nguồn Backend về Giám Đốc kiểm tra. |
+| **05** | **🎨 Nhân Viên Thiết Kế Frontend** | Dựng giao diện Web Studio/GUI phong cách Obsidian Dark Mode, dùng Stitch MCP, chống tự gõ HTML thô sơ. | Nộp mã nguồn Frontend về Giám Đốc kiểm tra. |
+| **06** | **🧪 Nhân Viên Kiểm Thử QA** | Nghiệm thu thực nghiệm 2 tầng: Unit Tests Backend 100% PASS + Chrome DevTools 0 lỗi đỏ JS console/network, chụp ảnh nghiệm thu. | Nộp chứng chỉ 100% PASS về Giám Đốc kiểm tra. |
+| **07** | **🛡️ Nhân Viên Bảo Mật & Tối Ưu** | Review 5 chiều (Correctness, Readability, Architecture, Security, Performance), quét 7 điểm an toàn bảo mật, dọn code rác. | Nộp báo cáo Clean Code về Giám Đốc kiểm tra. |
+| **08** | **🚀 Nhân Viên Đóng Gói DevOps** | Tạo script khởi động 1-click `run.bat`, commit Git chuẩn Conventional Commits Tiếng Việt, cập nhật `PROGRESS.md`. | Nộp gói xuất xưởng về Giám Đốc gộp dự án. |
 
 ---
 
-## III. 7 CỔNG CHẤT LƯỢNG BẮT BUỘC (QUALITY GATES)
+## III. QUY TRÌNH VẬN HÀNH 4 BƯỚC KHÉP KÍN (DIRECTOR LIFECYCLE)
 
-Agent đi trước chỉ được phép bàn giao sang Agent tiếp theo khi và chỉ khi vượt qua Cổng Chất Lượng:
+### Bước 1: Giám Đốc Tiếp Nhận Ý Tưởng & Phản Biện Cốt Lõi
+- Tiếp nhận bài toán thô từ Sếp (Người Dùng).
+- Phỏng vấn đúng 3 câu: Mục tiêu, Nền tảng, Quy mô.
+- Phân định rạch ròi:
+  + **CẦN LÀM:** 3 – 5 tính năng MVP cốt lõi, giải quyết triệt để nỗi đau người dùng.
+  + **KHÔNG CẦN LÀM:** Gạt bỏ tính năng rườm rà, rủi ro đơ máy, tiết kiệm tối đa token LLM.
+- Trình 2 Phương Án cho Sếp chọn. Sếp chốt ➔ Giám Đốc ra Chỉ Thị Tác Chiến.
 
-1. **Gate 1 (PM ➔ Architect):** `docs/PRD.md` tồn tại, phạm vi đóng băng 3-5 tính năng MVP, có tiêu chuẩn Acceptance Criteria định lượng.
-2. **Gate 2 (Architect ➔ Planner):** `docs/SPEC.md` hoàn thành, có phân tích Blast Radius, sơ đồ Clean Architecture 4 tầng rõ ràng.
-3. **Gate 3 (Planner ➔ Devs):** `docs/PLAN.md` hoàn thành, các task là Atomic Tasks (< 1 giờ/task), đã tạo điểm Git Backup an toàn.
-4. **Gate 4 (Devs ➔ QA):** Mã nguồn viết xong, 100% Type Hinting, file < 250 dòng, background threading an toàn.
-5. **Gate 5 (QA ➔ Reviewer):** 100% Unit Tests PASS + Chrome DevTools 0 lỗi đỏ Console/Network, có ảnh chụp visual.
-6. **Gate 6 (Reviewer ➔ DevOps):** Đạt 100% tiêu chí Review 5 chiều, 0 lỗ hổng bảo mật, 0 hardcoded key/secret.
-7. **Gate 7 (DevOps ➔ Người Dùng):** Script 1-click `run.bat` chạy êm, Git commit chuẩn Tiếng Việt, `PROGRESS.md` cập nhật đầy đủ.
+### Bước 2: 7 Nhân Viên Hoạt Động Riêng Lẻ — Mỗi Người 1 Nhiệm Vụ
+- Mỗi nhân viên chỉ tập trung 100% vào đúng chuyên môn của mình, không làm chồng chéo:
+  + Nhân viên 02 vẽ kiến trúc ➔ Nhân viên 03 lập kế hoạch ➔ Nhân viên 04 code backend & Nhân viên 05 làm giao diện ➔ Nhân viên 06 kiểm thử ➔ Nhân viên 07 rà soát bảo mật ➔ Nhân viên 08 đóng gói.
+
+### Bước 3: Cơ Chế Báo Cáo Ngược & Giám Đốc Kiểm Soát Tiến Độ
+- **Sau mỗi lần hoàn thành 1 việc, nhân viên BẮT BUỘC báo cáo ngay về cho Giám Đốc.**
+- Giám Đốc kiểm tra nghiêm ngặt qua 7 Cổng Chất Lượng (Quality Gates).
+- Nếu phát hiện bất kỳ sai sót nào ➔ Giám Đốc lệnh cho nhân viên đó khắc phục lỗi ngay tại chỗ (Auto-Fix Loop) trước khi chuyển việc tiếp theo.
+
+### Bước 4: Hợp Nhất Dự Án & Sếp Phê Duyệt Tối Cao (Hard Stop)
+- Khi cả 7 nhân viên đã hoàn thành nhiệm vụ xuất sắc và đạt 100% không lỗi:
+  + Giám Đốc **tổng hợp tất cả các phần lại thành 1 dự án hoàn chỉnh**.
+  + Giám Đốc mang toàn bộ kết quả lên **Trình diện Sếp kiểm định**.
+  + **ĐIỀU KIỆN TIÊN QUYẾT:** Bao giờ **Sếp nói "OK / Duyệt"** thì dự án mới chính thức được phê duyệt xuất xưởng!
+  + Nếu Sếp chưa đồng ý hoặc yêu cầu chỉnh sửa: Giám Đốc lập tức đối chiếu lại sơ đồ quy trình, truy tìm nguyên nhân và chỉ đạo đúng nhân viên phụ trách khắc phục triệt để lỗi đến khi Sếp hoàn toàn hài lòng.
 
 ---
 
 ## IV. CÁC CÁCH KÍCH HOẠT SKILL NÀY
+
 
 Skill này được kích hoạt tự động theo 3 cách:
 

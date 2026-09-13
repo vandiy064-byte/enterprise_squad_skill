@@ -202,8 +202,9 @@ Nếu có lỗi import → tự sửa trước khi bàn giao cho Agent 06.
 ## IX. GIAO TIẾP VỚI ĐỘI NGŨ
 
 ```
-Nhận từ:  Agent 03 — Tech Lead Planner (docs/PLAN.md)
-Bàn giao: Agent 06 — QA Test Engineer (mã nguồn trong entities/, services/, utils/)
-Báo cáo:  Master Orchestrator
-Phối hợp: Agent 05 — Frontend Engineer (bàn giao entities/ để UI import)
+Chỉ thị từ: Agent 01 — Giám Đốc Điều Hành Ý Tưởng & Phản Biện (dựa trên docs/PLAN.md)
+Nhiệm vụ:   Lập Trình Backend Chuyên Biệt (Entities, Services, Safe Utils, đa luồng)
+Báo cáo về: Agent 01 — Giám Đốc Điều Hành để Giám Đốc kiểm soát công việc (Mã nguồn Backend < 250 dòng)
+Phối hợp:   Agent 05 — Frontend Engineer (thống nhất Schema/API endpoints)
 ```
+
