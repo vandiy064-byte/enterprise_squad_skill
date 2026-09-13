@@ -75,3 +75,51 @@ Skill này được kích hoạt tự động theo 3 cách:
 
 - Sổ tay vận hành 10 chương: [`docs/SO_TAY_VAN_HANH_DOI_NGU.md`](file:///e:/app%20tools/docs/SO_TAY_VAN_HANH_DOI_NGU.md)
 - Thẻ tra cứu nhanh: [`SQUAD_QUICKSTART.md`](file:///e:/app%20tools/SQUAD_QUICKSTART.md)
+
+---
+
+## VI. GIAO THỨC TỐI ƯU HÓA LƯỢNG TOKEN (TOKEN OPTIMIZATION PROTOCOL - TOP)
+
+Để đảm bảo dự án chạy mượt mà, phản hồi cực nhanh và tiết kiệm **60% – 80% chi phí Token LLM**, toàn bộ 8 Agent BẮT BUỘC tuân thủ 6 Trụ Cột Tối Ưu Token sau:
+
+```
+┌────────────────────────────────────────────────────────────────────────────────────────┐
+│                   6 TRỤ CỘT TỐI ƯU HÓA TOKEN (TOKEN OPTIMIZATION)                      │
+├──────────────────────────────┬─────────────────────────────────────────────────────────┤
+│ 1. Progressive Disclosure    │ Chỉ nạp mô tả tóm tắt; chỉ mở chi tiết Agent khi cần.   │
+│ 2. Diff-Only Output          │ Tuyệt đối KHÔNG in lại file cũ; chỉ xuất khối lệnh sửa. │
+│ 3. AST-Targeted Search       │ Dùng GitNexus soi đúng hàm đích, không đọc cả repo.     │
+│ 4. Compact Quality Gates     │ Báo cáo bàn giao bằng checklist cô đọng, không rườm rà. │
+│ 5. Session Memory Snapshot   │ Neo trạng thái vào PROGRESS.md & Git, chống tràn nhớ.   │
+│ 6. Atomic Task Slicing       │ Chia task siêu nhỏ (< 150 dòng code/lượt), tránh đứt gãy.│
+└──────────────────────────────┴─────────────────────────────────────────────────────────┘
+```
+
+### 1. Progressive Disclosure (Nạp Ngữ Cảnh Tịnh Tiến)
+- Hệ thống KHÔNG nạp toàn bộ tài liệu 8 Agent vào ngữ cảnh ngay từ đầu.
+- Chỉ nạp thẻ tóm tắt YAML frontmatter của Skill (~150 tokens).
+- Khi quy trình bước vào Agent nào (ví dụ: Agent 01 phỏng vấn, Agent 04 viết code), AI mới dùng `view_file` đọc đúng file đặc tả của Agent đó. Tiết kiệm hơn **70% token đầu vào**.
+
+### 2. Diff-Only Code Modification (Chỉ Xuất Đoạn Code Thay Đổi)
+- Tuyệt đối CẤM in lại toàn bộ file dài hàng trăm dòng ra khung chat.
+- Khi chỉnh sửa file có sẵn, AI BẮT BUỘC dùng tool `replace_file_content` hoặc chỉ hiển thị đoạn mã cần thêm/sửa kèm 2-3 dòng ngữ cảnh trên dưới. Tiết kiệm **80% token đầu ra**.
+
+### 3. AST-Targeted Inspection (Định Vị Bằng Cây Cú Pháp GitNexus)
+- Thay vì dùng `list_dir` hoặc đọc đệ quy hàng chục file mã nguồn, AI dùng GitNexus (`query`, `impact`) để tra cứu chính xác node hàm/class bị tác động (Blast Radius).
+- Chỉ mở đúng hàm cần sửa, không nạp các file không liên quan vào bộ nhớ đệm.
+
+### 4. Compact Quality Gate Checkpoints (Báo Cáo Bàn Giao Cô Đọng)
+- Báo cáo kết quả giữa các Agent chỉ dùng bảng Markdown và checklist ngắn gọn (dưới 15 dòng).
+- Nghiêm cấm giải thích văn xuôi dài dòng, không lặp lại nội dung đã thống nhất ở bước trước.
+
+### 5. Context Compaction Resilience (Khả Năng Chống Mất Trí Nhớ Khi Nén)
+- Khi phiên chat kéo dài, hệ thống sẽ tự động kích hoạt cơ chế nén ngữ cảnh (Context Compaction).
+- Để AI không bị "quên" việc đang làm, trạng thái cốt lõi luôn được neo vào 2 điểm tựa:
+  + Dòng trạng thái đầu tiên của [`PROGRESS.md`](file:///e:/app%20tools/PROGRESS.md).
+  + Commit gần nhất của Git Graph (`git log -n 1 --oneline`).
+- AI chỉ cần đọc 2 điểm này là khôi phục 100% nhận thức dự án chỉ với **ít hơn 100 tokens**!
+
+### 6. Giới Hạn File Dưới 250 Dòng Code
+- Mọi module mã nguồn được khống chế nghiêm ngặt dưới 250 dòng code.
+- Giúp AI đọc/sửa file cực kỳ nhẹ nhàng, không bị hiện tượng tràn context window hoặc timeout.
+

@@ -300,3 +300,17 @@ Một sprint được coi là **THÀNH CÔNG HOÀN HẢO** khi:
 | ❌ Commit `.env` vào Git | Lộ credentials công khai | Agent 08 FAIL Gate 7 |
 | ❌ Viết file Python > 250 dòng | Khó maintain, review | Bị Agent 07 đánh dấu MAJOR |
 | ❌ Dùng backslash `\` cứng trong path | Chỉ chạy Windows | Bị Agent 07 đánh MAJOR |
+
+---
+
+## 11. QUY CHUẨN TỐI ƯU HÓA LƯỢNG TOKEN (TOKEN OPTIMIZATION PROTOCOL)
+
+Nhằm đảm bảo tiết kiệm **60% – 80% chi phí Token LLM**, giữ AI luôn nhạy bén và không bị nghẽn ngữ cảnh (Context Window Bloat), toàn đội tuân thủ nghiêm ngặt 6 tiêu chuẩn sau:
+
+1. **Progressive Disclosure:** Tuyệt đối không nạp toàn bộ tài liệu 8 Agent cùng lúc. Chỉ đọc file đặc tả khi Agent tương ứng được gọi.
+2. **Diff-Only Code Replacement:** CẤM in lại toàn bộ file code ra khung chat. Khi cập nhật file, chỉ xuất đúng khối lệnh thay đổi bằng tool `replace_file_content`.
+3. **AST Target-Search:** Dùng GitNexus query hoặc ripgrep trỏ thẳng vào hàm/class mục tiêu, không đọc tràn lan toàn bộ thư mục.
+4. **Compact Handoff Summary:** Báo cáo bàn giao tại các Gate chỉ tóm tắt dưới 15 dòng (bảng / checklist), không viết văn xuôi rườm rà.
+5. **Context Compaction Resilience:** Luôn neo trạng thái cốt lõi vào dòng đầu `PROGRESS.md` và `Git commit`, giúp AI phục hồi 100% ngữ cảnh sau khi nén với ít hơn 100 tokens.
+6. **Giới Hạn File Dưới 250 Dòng:** Phân rã module nhỏ gọn, đảm bảo mỗi lượt đọc/ghi file luôn nằm trong giới hạn token an toàn.
+

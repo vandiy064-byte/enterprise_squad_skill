@@ -4,13 +4,15 @@
 [![Antigravity Skill](https://img.shields.io/badge/Antigravity-Skill%20Ready-purple.svg)](https://github.com)
 [![Clean Architecture](https://img.shields.io/badge/Architecture-Clean%204--Tier-blue.svg)](https://github.com)
 [![Zero-Bug Policy](https://img.shields.io/badge/Policy-Zero--Bug-green.svg)](https://github.com)
+[![Token Optimized](https://img.shields.io/badge/Token%20Efficiency-60--80%25%20Saved-brightgreen.svg)](https://github.com)
 
-> **Hệ sinh thái Đội ngũ Multi-Agent 8 Vị trí Chuyên biệt Độc lập** điều phối quy trình phát triển phần mềm toàn diện từ ý tưởng thô đến bàn giao sản phẩm thương mại.
+> **Hệ sinh thái Đội ngũ Multi-Agent 8 Vị trí Chuyên biệt Độc lập** điều phối quy trình phát triển phần mềm toàn diện từ ý tưởng thô đến bàn giao sản phẩm thương mại. Tích hợp sẵn **Giao Thức Tối Ưu Hóa Token (TOP)** tiết kiệm chi phí và tăng tốc phản hồi.
 
 ---
 
 ## 🌟 Điểm Nổi Bật (Highlights)
 
+- ⚡ **Tiết Kiệm 60% – 80% Token:** Ứng dụng Progressive Disclosure, Diff-Only, AST Search và Session Memory Snapshot.
 - 🎯 **8 Vị Trí Chuyên Gia Độc Lập:** Product Manager, Lead Architect, Tech Lead Planner, Core Backend, Studio Frontend, QA Tester, Security Reviewer, Release DevOps.
 - 🛡️ **7 Cổng Chất Lượng Bắt Buộc (Quality Gates):** Ngăn chặn 100% rủi ro đứt gãy luồng, hallucination và code lỗi.
 - 📐 **Clean Architecture 4 Tầng:** Phân tách bạch lạc giữa Entities, Services, UI và Safe Utils.
